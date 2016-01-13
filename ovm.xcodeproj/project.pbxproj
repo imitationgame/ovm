@@ -21,6 +21,7 @@
 		DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E691C46EC18007E2888 /* vblur.m */; };
 		DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6B1C46EC18007E2888 /* viewbase.m */; };
 		DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6D1C46EC18007E2888 /* vspinner.m */; };
+		DABD83961C46F8B4003C28D3 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83951C46F8B4003C28D3 /* chome.m */; };
 		DAF8C2271C46EF9B00DB03F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		DA3F6E6C1C46EC18007E2888 /* vspinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vspinner.h; sourceTree = "<group>"; };
 		DA3F6E6D1C46EC18007E2888 /* vspinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vspinner.m; sourceTree = "<group>"; };
 		DA3F6E6F1C46EC18007E2888 /* v.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v.h; sourceTree = "<group>"; };
+		DABD83941C46F8B4003C28D3 /* chome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chome.h; sourceTree = "<group>"; };
+		DABD83951C46F8B4003C28D3 /* chome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chome.m; sourceTree = "<group>"; };
 		DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +227,7 @@
 			children = (
 				DA3F6E591C46EC18007E2888 /* c.h */,
 				DA3F6E561C46EC18007E2888 /* alert */,
+				DABD83931C46F8A4003C28D3 /* home */,
 				DA3F6E5A1C46EC18007E2888 /* main */,
 			);
 			path = c;
@@ -302,6 +306,15 @@
 			children = (
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		DABD83931C46F8A4003C28D3 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DABD83941C46F8B4003C28D3 /* chome.h */,
+				DABD83951C46F8B4003C28D3 /* chome.m */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +446,7 @@
 				DA3F6E781C46EC18007E2888 /* calert.m in Sources */,
 				DA3F6E751C46EC18007E2888 /* analytics.m in Sources */,
 				DA3F6E791C46EC18007E2888 /* cmain.m in Sources */,
+				DABD83961C46F8B4003C28D3 /* chome.m in Sources */,
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,
 				DA3F6E761C46EC18007E2888 /* tools.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
