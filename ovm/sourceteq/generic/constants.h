@@ -4,23 +4,14 @@
 
 // font
 
-#define fontname                @"STHeitiTC-Light"
-#define fontboldname            @"STHeitiTC-Medium"
+#define fontname                @"HelveticaNeue-Light"
+#define fontboldname            @"HelveticaNeue-Medium"
 
 // ids
 
 #define celid                   @"cel"
 #define footerid                @"footer"
 #define headerid                @"header"
-
-// metrics
-
-#define menuheight              50
-
-// notifications
-
-#define notloadfinish           @"loadfinish"
-#define notmenuchanged          @"menuchanged"
 
 // extra
 
