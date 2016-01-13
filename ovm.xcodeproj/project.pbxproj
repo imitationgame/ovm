@@ -22,6 +22,7 @@
 		DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6B1C46EC18007E2888 /* viewbase.m */; };
 		DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6D1C46EC18007E2888 /* vspinner.m */; };
 		DABD83961C46F8B4003C28D3 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83951C46F8B4003C28D3 /* chome.m */; };
+		DABD83981C46F950003C28D3 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD83971C46F950003C28D3 /* analytics.plist */; };
 		DAF8C2271C46EF9B00DB03F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		DA3F6E6F1C46EC18007E2888 /* v.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v.h; sourceTree = "<group>"; };
 		DABD83941C46F8B4003C28D3 /* chome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chome.h; sourceTree = "<group>"; };
 		DABD83951C46F8B4003C28D3 /* chome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chome.m; sourceTree = "<group>"; };
+		DABD83971C46F950003C28D3 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				DA3F6E3D1C46EC18007E2888 /* defs.plist */,
+				DABD83971C46F950003C28D3 /* analytics.plist */,
 				DA3F6E3E1C46EC18007E2888 /* Localizable.strings */,
 			);
 			path = langteq;
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3F6E701C46EC18007E2888 /* defs.plist in Resources */,
+				DABD83981C46F950003C28D3 /* analytics.plist in Resources */,
 				DAF8C2271C46EF9B00DB03F2 /* Images.xcassets in Resources */,
 				DA3F6E711C46EC18007E2888 /* Localizable.strings in Resources */,
 			);
