@@ -16,7 +16,7 @@
 
 -(void)loadView
 {
-    
+    self.view = [[vhome alloc] init];
 }
 
 @end
