@@ -1,6 +1,6 @@
 // color
 
-#define colormain               [UIColor colorWithRed:0.4862 green:0.2862 blue:1 alpha:1]
+#define colormain               [UIColor colorWithRed:0.5098 green:0.5019 blue:0.7372 alpha:1]
 
 // font
 
