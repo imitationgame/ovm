@@ -8,7 +8,7 @@
     [self setClipsToBounds:YES];
     [self setUserInteractionEnabled:NO];
     [self setBackgroundColor:[UIColor clearColor]];
-    [self setTranslatesAutoresizingMaskIntoConstraints:YES];
+    [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     UIImageView *icon = [[UIImageView alloc] init];
     [icon setContentMode:UIViewContentModeCenter];
