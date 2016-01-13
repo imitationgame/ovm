@@ -1,11 +1,7 @@
 #import "appdel.h"
 
-@interface cmain:UIPageViewController
+@interface cmain:UIViewController
 
 +(instancetype)singleton;
--(void)openinitial;
--(void)opensection:(id<msectionprotocol>)section animated:(BOOL)animated;
-
-@property(strong, nonatomic)id<msectionprotocol> section;
 
 @end
