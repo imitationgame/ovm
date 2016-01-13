@@ -13,7 +13,7 @@
 
 -(instancetype)init
 {
-    self = [super init];
+    self = [super initWithRootViewController:[[chome alloc] init]];
     
     return self;
 }
@@ -23,6 +23,8 @@
     [super viewDidLoad];
     
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontname size:16]} forState:UIControlStateNormal];
+    [self.navigationBar setTintColor:colormain];
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontboldname size:16], NSForegroundColorAttributeName:[UIColor blackColor]}];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle
