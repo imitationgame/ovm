@@ -2,6 +2,7 @@
 #import "viewbase.h"
 #import "vspinner.h"
 #import "vhome.h"
+#import "vlogo.h"
 #import "vhomeheader.h"
 #import "vhomefooter.h"
 #import "vhomecel.h"
