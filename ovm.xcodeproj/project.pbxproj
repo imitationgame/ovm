@@ -27,6 +27,7 @@
 		DABD839F1C470044003C28D3 /* vhomeheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839E1C470044003C28D3 /* vhomeheader.m */; };
 		DABD83A21C47004D003C28D3 /* vhomecel.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83A11C47004D003C28D3 /* vhomecel.m */; };
 		DABD83A51C470068003C28D3 /* vhomefooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83A41C470068003C28D3 /* vhomefooter.m */; };
+		DABD83A71C4707A0003C28D3 /* in in Resources */ = {isa = PBXBuildFile; fileRef = DABD83A61C4707A0003C28D3 /* in */; };
 		DAF8C2271C46EF9B00DB03F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		DABD83A11C47004D003C28D3 /* vhomecel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecel.m; sourceTree = "<group>"; };
 		DABD83A31C470068003C28D3 /* vhomefooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomefooter.h; sourceTree = "<group>"; };
 		DABD83A41C470068003C28D3 /* vhomefooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomefooter.m; sourceTree = "<group>"; };
+		DABD83A61C4707A0003C28D3 /* in */ = {isa = PBXFileReference; lastKnownFileType = folder; path = in; sourceTree = "<group>"; };
 		DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,17 +145,10 @@
 		DA3F6E391C46EC18007E2888 /* imateq */ = {
 			isa = PBXGroup;
 			children = (
-				DA3F6E3A1C46EC18007E2888 /* in */,
+				DABD83A61C4707A0003C28D3 /* in */,
 				DA3F6E3B1C46EC18007E2888 /* ui */,
 			);
 			path = imateq;
-			sourceTree = "<group>";
-		};
-		DA3F6E3A1C46EC18007E2888 /* in */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = in;
 			sourceTree = "<group>";
 		};
 		DA3F6E3B1C46EC18007E2888 /* ui */ = {
@@ -410,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABD83A71C4707A0003C28D3 /* in in Resources */,
 				DA3F6E701C46EC18007E2888 /* defs.plist in Resources */,
 				DABD83981C46F950003C28D3 /* analytics.plist in Resources */,
 				DAF8C2271C46EF9B00DB03F2 /* Images.xcassets in Resources */,
@@ -593,7 +589,7 @@
 			baseConfigurationReference = 622C6F0CE626AB28520DFD6D /* Pods-ovm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ovm/sourceteq/core/Info.plist";
@@ -609,7 +605,7 @@
 			baseConfigurationReference = DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ovm/sourceteq/core/Info.plist";
