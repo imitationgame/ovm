@@ -33,11 +33,7 @@ NSString *documents;
         {
             [updater firsttime:defaults];
         }
-        
-        [mdb updatedb];
     }
-    
-    dbname = [documents stringByAppendingPathComponent:[properties valueForKey:@"dbname"]];
 }
 
 +(void)firsttime:(NSDictionary*)plist

@@ -17,7 +17,6 @@
 		DA3F6E771C46EC18007E2888 /* updater.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E4F1C46EC18007E2888 /* updater.m */; };
 		DA3F6E781C46EC18007E2888 /* calert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E581C46EC18007E2888 /* calert.m */; };
 		DA3F6E791C46EC18007E2888 /* cmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E5C1C46EC18007E2888 /* cmain.m */; };
-		DA3F6E7A1C46EC18007E2888 /* msession.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E611C46EC18007E2888 /* msession.m */; };
 		DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E661C46EC18007E2888 /* valert.m */; };
 		DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E691C46EC18007E2888 /* vblur.m */; };
 		DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6B1C46EC18007E2888 /* viewbase.m */; };
@@ -52,8 +51,6 @@
 		DA3F6E5B1C46EC18007E2888 /* cmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmain.h; sourceTree = "<group>"; };
 		DA3F6E5C1C46EC18007E2888 /* cmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cmain.m; sourceTree = "<group>"; };
 		DA3F6E5F1C46EC18007E2888 /* mgeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgeneral.h; sourceTree = "<group>"; };
-		DA3F6E601C46EC18007E2888 /* msession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msession.h; sourceTree = "<group>"; };
-		DA3F6E611C46EC18007E2888 /* msession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = msession.m; sourceTree = "<group>"; };
 		DA3F6E621C46EC18007E2888 /* m.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m.h; sourceTree = "<group>"; };
 		DA3F6E651C46EC18007E2888 /* valert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = valert.h; sourceTree = "<group>"; };
 		DA3F6E661C46EC18007E2888 /* valert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = valert.m; sourceTree = "<group>"; };
@@ -263,8 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				DA3F6E5F1C46EC18007E2888 /* mgeneral.h */,
-				DA3F6E601C46EC18007E2888 /* msession.h */,
-				DA3F6E611C46EC18007E2888 /* msession.m */,
 			);
 			path = general;
 			sourceTree = "<group>";
@@ -441,7 +436,6 @@
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,
 				DA3F6E761C46EC18007E2888 /* tools.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
-				DA3F6E7A1C46EC18007E2888 /* msession.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
 			);
@@ -549,6 +543,7 @@
 			baseConfigurationReference = 622C6F0CE626AB28520DFD6D /* Pods-ovm.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ovm/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.ovm;
@@ -561,6 +556,7 @@
 			baseConfigurationReference = DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ovm/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.ovm;
