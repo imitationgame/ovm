@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738175F015B5A781FD12B07F /* libPods-ovm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8E63BDF842FD31C3C35D16 /* libPods-ovm.a */; };
 		DA3F6E701C46EC18007E2888 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA3F6E3D1C46EC18007E2888 /* defs.plist */; };
 		DA3F6E711C46EC18007E2888 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA3F6E3E1C46EC18007E2888 /* Localizable.strings */; };
 		DA3F6E721C46EC18007E2888 /* appdel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E441C46EC18007E2888 /* appdel.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		622C6F0CE626AB28520DFD6D /* Pods-ovm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.debug.xcconfig"; sourceTree = "<group>"; };
+		BB8E63BDF842FD31C3C35D16 /* libPods-ovm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ovm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3F6E1F1C46EA7B007E2888 /* ovm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ovm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3F6E3D1C46EC18007E2888 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
 		DA3F6E3F1C46EC18007E2888 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		DA3F6E6D1C46EC18007E2888 /* vspinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vspinner.m; sourceTree = "<group>"; };
 		DA3F6E6F1C46EC18007E2888 /* v.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v.h; sourceTree = "<group>"; };
 		DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +74,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738175F015B5A781FD12B07F /* libPods-ovm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EAE5904345E4D42F43B22AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				622C6F0CE626AB28520DFD6D /* Pods-ovm.debug.xcconfig */,
+				DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A914D4C85E91B090FD0A4E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB8E63BDF842FD31C3C35D16 /* libPods-ovm.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA3F6E161C46EA7B007E2888 = {
 			isa = PBXGroup;
 			children = (
 				DA3F6E211C46EA7B007E2888 /* ovm */,
 				DA3F6E201C46EA7B007E2888 /* Products */,
+				5EAE5904345E4D42F43B22AA /* Pods */,
+				A914D4C85E91B090FD0A4E97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA3F6E361C46EA7B007E2888 /* Build configuration list for PBXNativeTarget "ovm" */;
 			buildPhases = (
+				A5026D0572E730743E706FA2 /* Check Pods Manifest.lock */,
 				DA3F6E1B1C46EA7B007E2888 /* Sources */,
 				DA3F6E1C1C46EA7B007E2888 /* Frameworks */,
 				DA3F6E1D1C46EA7B007E2888 /* Resources */,
+				15947718B49124C20B05C57C /* Embed Pods Frameworks */,
+				31D976AC992FEAAA2C077882 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,6 +380,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15947718B49124C20B05C57C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ovm/Pods-ovm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31D976AC992FEAAA2C077882 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ovm/Pods-ovm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5026D0572E730743E706FA2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA3F6E1B1C46EA7B007E2888 /* Sources */ = {
@@ -473,6 +548,7 @@
 		};
 		DA3F6E371C46EA7B007E2888 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622C6F0CE626AB28520DFD6D /* Pods-ovm.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/ovm/sourceteq/core/Info.plist";
@@ -484,6 +560,7 @@
 		};
 		DA3F6E381C46EA7B007E2888 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/ovm/sourceteq/core/Info.plist";
