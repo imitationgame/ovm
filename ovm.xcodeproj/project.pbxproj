@@ -24,6 +24,9 @@
 		DABD83961C46F8B4003C28D3 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83951C46F8B4003C28D3 /* chome.m */; };
 		DABD83981C46F950003C28D3 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD83971C46F950003C28D3 /* analytics.plist */; };
 		DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839B1C46FE0F003C28D3 /* vhome.m */; };
+		DABD839F1C470044003C28D3 /* vhomeheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839E1C470044003C28D3 /* vhomeheader.m */; };
+		DABD83A21C47004D003C28D3 /* vhomecel.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83A11C47004D003C28D3 /* vhomecel.m */; };
+		DABD83A51C470068003C28D3 /* vhomefooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83A41C470068003C28D3 /* vhomefooter.m */; };
 		DAF8C2271C46EF9B00DB03F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,12 @@
 		DABD83971C46F950003C28D3 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DABD839A1C46FE0F003C28D3 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
 		DABD839B1C46FE0F003C28D3 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
+		DABD839D1C470044003C28D3 /* vhomeheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomeheader.h; sourceTree = "<group>"; };
+		DABD839E1C470044003C28D3 /* vhomeheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomeheader.m; sourceTree = "<group>"; };
+		DABD83A01C47004D003C28D3 /* vhomecel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecel.h; sourceTree = "<group>"; };
+		DABD83A11C47004D003C28D3 /* vhomecel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecel.m; sourceTree = "<group>"; };
+		DABD83A31C470068003C28D3 /* vhomefooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomefooter.h; sourceTree = "<group>"; };
+		DABD83A41C470068003C28D3 /* vhomefooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomefooter.m; sourceTree = "<group>"; };
 		DAF8C2261C46EF9B00DB03F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF5B8A32DC524E45172A5DE3 /* Pods-ovm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -329,6 +338,12 @@
 			children = (
 				DABD839A1C46FE0F003C28D3 /* vhome.h */,
 				DABD839B1C46FE0F003C28D3 /* vhome.m */,
+				DABD839D1C470044003C28D3 /* vhomeheader.h */,
+				DABD839E1C470044003C28D3 /* vhomeheader.m */,
+				DABD83A31C470068003C28D3 /* vhomefooter.h */,
+				DABD83A41C470068003C28D3 /* vhomefooter.m */,
+				DABD83A01C47004D003C28D3 /* vhomecel.h */,
+				DABD83A11C47004D003C28D3 /* vhomecel.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -457,14 +472,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABD839F1C470044003C28D3 /* vhomeheader.m in Sources */,
 				DA3F6E741C46EC18007E2888 /* main.m in Sources */,
 				DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */,
 				DA3F6E721C46EC18007E2888 /* appdel.m in Sources */,
 				DA3F6E781C46EC18007E2888 /* calert.m in Sources */,
 				DA3F6E751C46EC18007E2888 /* analytics.m in Sources */,
+				DABD83A51C470068003C28D3 /* vhomefooter.m in Sources */,
 				DA3F6E791C46EC18007E2888 /* cmain.m in Sources */,
 				DABD83961C46F8B4003C28D3 /* chome.m in Sources */,
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,
+				DABD83A21C47004D003C28D3 /* vhomecel.m in Sources */,
 				DA3F6E761C46EC18007E2888 /* tools.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
