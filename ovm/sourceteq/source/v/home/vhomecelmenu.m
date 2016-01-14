@@ -66,4 +66,9 @@
     return cel;
 }
 
+-(void)collectionView:(UICollectionView*)col didSelectItemAtIndexPath:(NSIndexPath*)index
+{
+    [[cmain singleton] pushViewController:[[[[self.model item:index.item] controller] alloc] init] animated:YES];
+}
+
 @end
