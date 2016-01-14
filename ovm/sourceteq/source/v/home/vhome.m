@@ -34,6 +34,7 @@
     [collection registerClass:[vhomecel class] forCellWithReuseIdentifier:celid];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     
+    [collection setContentOffset:CGPointMake(0, 50)];
     [self addSubview:logo];
     [self addSubview:collection];
     
