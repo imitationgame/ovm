@@ -1,13 +1,38 @@
-//
-//  mhome.m
-//  ovm
-//
-//  Created by zero on 1/13/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
-
 #import "mhome.h"
 
 @implementation mhome
+{
+    NSArray *array;
+}
+
+-(instancetype)init
+{
+    self = [super init];
+    
+    
+    return self;
+}
+
+#pragma mark public
+
+-(NSInteger)count
+{
+    
+}
+
+-(CGFloat)heightforitem:(NSInteger)item
+{
+    
+}
+
+-(void)registercels:(UICollectionView*)col
+{
+    
+}
+
+-(UICollectionViewCell*)dequeuecel:(UICollectionView*)col index:(NSInteger)index;
+{
+    
+}
 
 @end

@@ -1,13 +1,10 @@
-//
-//  mhome.h
-//  ovm
-//
-//  Created by zero on 1/13/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
+@interface mhome:NSObject
 
-@interface mhome : NSObject
+-(NSInteger)count;
+-(CGFloat)heightforitem:(NSInteger)item;
+-(void)registercels:(UICollectionView*)col;
+-(UICollectionViewCell*)dequeuecel:(UICollectionView*)col index:(NSInteger)index;
 
 @end
