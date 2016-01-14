@@ -16,10 +16,12 @@
     self.logo = logo;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setFooterReferenceSize:CGSizeZero];
+    [flow setHeaderReferenceSize:CGSizeZero];
     [flow setMinimumInteritemSpacing:0];
     [flow setMinimumLineSpacing:10];
     [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flow setSectionInset:UIEdgeInsetsMake(logoheight, 0, 10, 0)];
+    [flow setSectionInset:UIEdgeInsetsMake(logoheight + 10, 0, 20, 0)];
     
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setBackgroundColor:[UIColor clearColor]];
@@ -33,7 +35,6 @@
     [collection registerClass:[vhomeceltitle class] forCellWithReuseIdentifier:headerid];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     
-    [collection setContentOffset:CGPointMake(0, 50)];
     [self addSubview:logo];
     [self addSubview:collection];
     

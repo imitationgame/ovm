@@ -13,7 +13,7 @@
     [lbl setBackgroundColor:[UIColor clearColor]];
     [lbl setTextAlignment:NSTextAlignmentCenter];
     [lbl setNumberOfLines:0];
-    [lbl setFont:[UIFont fontWithName:fontboldname size:15]];
+    [lbl setFont:[UIFont fontWithName:fontboldname size:16]];
     [lbl setTextColor:[UIColor blackColor]];
     [lbl setText:NSLocalizedString(@"home_title", nil)];
     [lbl setTranslatesAutoresizingMaskIntoConstraints:NO];
