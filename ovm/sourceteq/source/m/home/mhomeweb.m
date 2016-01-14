@@ -19,7 +19,7 @@
 
 -(CGFloat)height
 {
-    return 70;
+    return 80;
 }
 
 -(void)registercel:(UICollectionView*)col
