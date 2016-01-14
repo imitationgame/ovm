@@ -1,15 +1,16 @@
-#import "mhomemenu.h"
+#import "mhomespace.h"
 
-@implementation mhomemenu
+@implementation mhomespace
 {
     NSString *celname;
 }
 
--(instancetype)init
+-(instancetype)init:(CGFloat)height
 {
     self = [super init];
     
-    celname = @"menu";
+    celname = @"space";
+    self.height = height;
     
     return self;
 }
@@ -19,12 +20,12 @@
 
 -(CGSize)sizeforwidth:(CGFloat)width
 {
-    return CGSizeMake(width, 80);
+    return CGSizeMake(width, self.height);
 }
 
 -(void)registercel:(UICollectionView*)col
 {
-    [col registerClass:[vhomecelmenu class] forCellWithReuseIdentifier:celname];
+    [col registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:celname];
 }
 
 -(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index

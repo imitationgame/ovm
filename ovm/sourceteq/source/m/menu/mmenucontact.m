@@ -17,7 +17,7 @@
 
 -(NSString*)image
 {
-    return @"contact";
+    return @"phone";
 }
 
 @end

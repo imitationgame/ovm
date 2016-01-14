@@ -4,6 +4,7 @@
 #import "mhometitle.h"
 #import "mhomemenu.h"
 #import "mhomebanners.h"
+#import "mhomespace.h"
 #import "mmenu.h"
 #import "mmenuprotocol.h"
 #import "mmenulocations.h"

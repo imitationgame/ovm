@@ -52,6 +52,7 @@
 		DA8E658B1C4843FD00BECAF6 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65881C4843FD00BECAF6 /* phone.png */; };
 		DA8E658C1C4843FD00BECAF6 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65891C4843FD00BECAF6 /* phone@2x.png */; };
 		DA8E658D1C4843FD00BECAF6 /* phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E658A1C4843FD00BECAF6 /* phone@3x.png */; };
+		DA8E65901C48458B00BECAF6 /* mhomespace.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E658F1C48458B00BECAF6 /* mhomespace.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -145,6 +146,8 @@
 		DA8E65881C4843FD00BECAF6 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		DA8E65891C4843FD00BECAF6 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
 		DA8E658A1C4843FD00BECAF6 /* phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@3x.png"; sourceTree = "<group>"; };
+		DA8E658E1C48458B00BECAF6 /* mhomespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomespace.h; sourceTree = "<group>"; };
+		DA8E658F1C48458B00BECAF6 /* mhomespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mhomespace.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 				DAA82FBD1C47289C00C40A7C /* mhomebanners.m */,
 				DA8E65491C47F64C00BECAF6 /* mhomemenu.h */,
 				DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */,
+				DA8E658E1C48458B00BECAF6 /* mhomespace.h */,
+				DA8E658F1C48458B00BECAF6 /* mhomespace.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -660,6 +665,7 @@
 				DA8E65691C48332A00BECAF6 /* mmenulocations.m in Sources */,
 				DA3F6E751C46EC18007E2888 /* analytics.m in Sources */,
 				DA3F6E791C46EC18007E2888 /* cmain.m in Sources */,
+				DA8E65901C48458B00BECAF6 /* mhomespace.m in Sources */,
 				DABD83961C46F8B4003C28D3 /* chome.m in Sources */,
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,
 				DA3F6E761C46EC18007E2888 /* tools.m in Sources */,
