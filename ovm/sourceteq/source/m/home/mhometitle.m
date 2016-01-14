@@ -21,7 +21,7 @@
 
 -(CGSize)sizeforwidth:(CGFloat)width
 {
-    return CGSizeMake(width, 45);
+    return CGSizeMake(width, 50);
 }
 
 -(void)registercel:(UICollectionView*)col
@@ -33,7 +33,7 @@
 {
     vhomeceltitle *cel = [col dequeueReusableCellWithReuseIdentifier:celname forIndexPath:index];
     [cel.lbl setText:self.title];
-    [cel.lbl setFont:[UIFont fontWithName:fontname size:self.fontsize]];
+    [cel.lbl setFont:[UIFont fontWithName:fontboldname size:self.fontsize]];
     
     return cel;
 }
