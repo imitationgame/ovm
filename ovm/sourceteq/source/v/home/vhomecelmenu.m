@@ -52,7 +52,12 @@
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
-    return [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    id<mmenuprotocol> item = [self.model item:index.item];
+    
+    vhomecelmenucel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    [cel config:[item title] image:[item image]];
+    
+    return cel;
 }
 
 @end

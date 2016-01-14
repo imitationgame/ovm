@@ -68,4 +68,11 @@
 
 #pragma mark public
 
+-(void)config:(NSString*)title image:(NSString*)image
+{
+    [self.lbl setText:title];
+    [self.icon setImage:[[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
+    [self hover];
+}
+
 @end

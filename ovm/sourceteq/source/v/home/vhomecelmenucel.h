@@ -2,6 +2,8 @@
 
 @interface vhomecelmenucel:UICollectionViewCell
 
+-(void)config:(NSString*)title image:(NSString*)image;
+
 @property(weak, nonatomic)UIImageView *icon;
 @property(weak, nonatomic)UILabel *lbl;
 
