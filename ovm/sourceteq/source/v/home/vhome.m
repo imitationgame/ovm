@@ -29,9 +29,8 @@
     [collection setAlwaysBounceVertical:YES];
     [collection setDelegate:self];
     [collection setDataSource:self];
-    [collection registerClass:[vhomeheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerid];
-    [collection registerClass:[vhomefooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:footerid];
     [collection registerClass:[vhomecel class] forCellWithReuseIdentifier:celid];
+    [collection registerClass:[vhomeceltitle class] forCellWithReuseIdentifier:headerid];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     [collection setContentOffset:CGPointMake(0, 50)];
@@ -52,16 +51,6 @@
 #pragma mark -
 #pragma mark col del
 
--(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForFooterInSection:(NSInteger)section
-{
-    return CGSizeMake(self.bounds.size.width, 50);
-}
-
--(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    return CGSizeMake(self.bounds.size.width, 40);
-}
-
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
 {
     return CGSizeMake(self.bounds.size.width, 60);
@@ -74,28 +63,21 @@
 
 -(NSInteger)collectionView:(UICollectionView*)col numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
-}
-
--(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
-{
-    UICollectionReusableView *reusable;
-    
-    if(kind == UICollectionElementKindSectionHeader)
-    {
-        reusable = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerid forIndexPath:index];
-    }
-    else
-    {
-        reusable = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerid forIndexPath:index];
-    }
-    
-    return reusable;
+    return 1;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
-    vhomecel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    vhomecel *cel;
+    
+    if(index.item)
+    {
+        cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    }
+    else
+    {
+        cel = [col dequeueReusableCellWithReuseIdentifier:headerid forIndexPath:index];
+    }
     
     return cel;
 }

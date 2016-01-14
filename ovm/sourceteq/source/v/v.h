@@ -3,7 +3,6 @@
 #import "vspinner.h"
 #import "vhome.h"
 #import "vlogo.h"
-#import "vhomefooter.h"
 #import "vhomecel.h"
 #import "vhomeceltitle.h"
 #import "valert.h"
