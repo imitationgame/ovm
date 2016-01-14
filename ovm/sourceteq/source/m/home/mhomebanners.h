@@ -4,6 +4,6 @@
 
 -(instancetype)init:(NSString*)flyer;
 
-@property(copy, nonatomic)NSString *flyer;
+@property(strong, nonatomic)UIImage *image;
 
 @end

@@ -3,14 +3,18 @@
 @implementation mhomebanners
 {
     NSString *celname;
+    CGFloat imagewidth;
+    CGFloat imageheight;
 }
 
 -(instancetype)init:(NSString*)flyer
 {
     self = [super init];
 
-    self.flyer = flyer;
     celname = @"banners";
+    self.image = [UIImage imageNamed:flyer];
+    imagewidth = self.image.size.width;
+    imageheight = self.image.size.height;
     
     return self;
 }
@@ -20,7 +24,24 @@
 
 -(CGSize)sizeforwidth:(CGFloat)width
 {
-    return CGSizeMake(width, 290);
+    CGFloat ratiowidth = imagewidth / width;
+    CGFloat validwidth;
+    CGFloat validheight;
+    
+    if(ratiowidth >= 1)
+    {
+        validwidth = imagewidth / ratiowidth;
+        validheight = imageheight / ratiowidth;
+    }
+    else
+    {
+        validwidth = imagewidth;
+        validheight = imageheight;
+    }
+    
+    validheight += 10;
+    
+    return CGSizeMake(validwidth, validheight);
 }
 
 -(void)registercel:(UICollectionView*)col
@@ -31,7 +52,7 @@
 -(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index
 {
     vhomecelbanner *cel = [col dequeueReusableCellWithReuseIdentifier:celname forIndexPath:index];
-    [cel.image setImage:[UIImage imageNamed:self.flyer]];
+    [cel.image setImage:self.image];
     
     return cel;
 }
