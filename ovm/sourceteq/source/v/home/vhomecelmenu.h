@@ -1,13 +1,7 @@
-//
-//  vhomecelmenu.h
-//  ovm
-//
-//  Created by zero on 1/14/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
+@interface vhomecelmenu:UICollectionViewCell<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
-@interface vhomecelmenu : NSObject
+@property(weak, nonatomic)UICollectionView *collection;
 
 @end
