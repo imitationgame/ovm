@@ -10,3 +10,4 @@
 #import "valert.h"
 #import "vabout.h"
 #import "vaboutcel.h"
+#import "vservices.h"

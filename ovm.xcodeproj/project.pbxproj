@@ -59,6 +59,8 @@
 		DA8E65A01C484DE300BECAF6 /* mabout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E659F1C484DE300BECAF6 /* mabout.m */; };
 		DA8E65A31C48508E00BECAF6 /* maboutitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65A21C48508E00BECAF6 /* maboutitem.m */; };
 		DA8E65A61C48540100BECAF6 /* vaboutcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65A51C48540100BECAF6 /* vaboutcel.m */; };
+		DA8E65AA1C485ED500BECAF6 /* cservices.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65A91C485ED500BECAF6 /* cservices.m */; };
+		DA8E65AE1C48623200BECAF6 /* vservices.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65AD1C48623200BECAF6 /* vservices.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -166,6 +168,10 @@
 		DA8E65A21C48508E00BECAF6 /* maboutitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = maboutitem.m; sourceTree = "<group>"; };
 		DA8E65A41C48540100BECAF6 /* vaboutcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vaboutcel.h; sourceTree = "<group>"; };
 		DA8E65A51C48540100BECAF6 /* vaboutcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vaboutcel.m; sourceTree = "<group>"; };
+		DA8E65A81C485ED500BECAF6 /* cservices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cservices.h; sourceTree = "<group>"; };
+		DA8E65A91C485ED500BECAF6 /* cservices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cservices.m; sourceTree = "<group>"; };
+		DA8E65AC1C48623200BECAF6 /* vservices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vservices.h; sourceTree = "<group>"; };
+		DA8E65AD1C48623200BECAF6 /* vservices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vservices.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -374,6 +380,7 @@
 				DA3F6E561C46EC18007E2888 /* alert */,
 				DABD83931C46F8A4003C28D3 /* home */,
 				DA3F6E5A1C46EC18007E2888 /* main */,
+				DA8E65A71C485EBF00BECAF6 /* services */,
 				DA8E65911C4848DF00BECAF6 /* about */,
 			);
 			path = c;
@@ -425,6 +432,7 @@
 				DA3F6E641C46EC18007E2888 /* alert */,
 				DA8E65951C4849DC00BECAF6 /* about */,
 				DA3F6E671C46EC18007E2888 /* general */,
+				DA8E65AB1C48622400BECAF6 /* services */,
 				DA3F6E6E1C46EC18007E2888 /* main */,
 			);
 			path = v;
@@ -506,6 +514,24 @@
 				DA8E65A21C48508E00BECAF6 /* maboutitem.m */,
 			);
 			path = about;
+			sourceTree = "<group>";
+		};
+		DA8E65A71C485EBF00BECAF6 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E65A81C485ED500BECAF6 /* cservices.h */,
+				DA8E65A91C485ED500BECAF6 /* cservices.m */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		DA8E65AB1C48622400BECAF6 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E65AC1C48623200BECAF6 /* vservices.h */,
+				DA8E65AD1C48623200BECAF6 /* vservices.m */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		DAA82FB41C47261900C40A7C /* home */ = {
@@ -727,12 +753,14 @@
 				DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */,
 				DA8E65A01C484DE300BECAF6 /* mabout.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
+				DA8E65AA1C485ED500BECAF6 /* cservices.m in Sources */,
 				DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */,
 				DA8E65981C4849E900BECAF6 /* vabout.m in Sources */,
 				DA8E65651C48316100BECAF6 /* mmenu.m in Sources */,
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
 				DA8E65721C48360900BECAF6 /* mmenuservices.m in Sources */,
 				DAA82FBE1C47289C00C40A7C /* mhomebanners.m in Sources */,
+				DA8E65AE1C48623200BECAF6 /* vservices.m in Sources */,
 				DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */,
 				DA8E65941C4848FA00BECAF6 /* cabout.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,

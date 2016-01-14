@@ -6,6 +6,7 @@
 	<array>
 		<string>home</string>
 		<string>about</string>
+		<string>services</string>
 	</array>
 	<key>events</key>
 	<array>
