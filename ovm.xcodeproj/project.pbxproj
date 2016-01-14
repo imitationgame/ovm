@@ -34,6 +34,7 @@
 		DA8E655E1C47F94000BECAF6 /* flyer05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65541C47F94000BECAF6 /* flyer05.jpg */; };
 		DA8E655F1C47F94000BECAF6 /* flyer05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65551C47F94000BECAF6 /* flyer05@2x.jpg */; };
 		DA8E65611C47F96900BECAF6 /* flyers.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65601C47F96900BECAF6 /* flyers.plist */; };
+		DA8E65651C48316100BECAF6 /* mmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65641C48316100BECAF6 /* mmenu.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -102,6 +103,8 @@
 		DA8E65541C47F94000BECAF6 /* flyer05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flyer05.jpg; sourceTree = "<group>"; };
 		DA8E65551C47F94000BECAF6 /* flyer05@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flyer05@2x.jpg"; sourceTree = "<group>"; };
 		DA8E65601C47F96900BECAF6 /* flyers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flyers.plist; sourceTree = "<group>"; };
+		DA8E65631C48316100BECAF6 /* mmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenu.h; sourceTree = "<group>"; };
+		DA8E65641C48316100BECAF6 /* mmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmenu.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -382,6 +385,8 @@
 		DA8E65621C4808B200BECAF6 /* menu */ = {
 			isa = PBXGroup;
 			children = (
+				DA8E65631C48316100BECAF6 /* mmenu.h */,
+				DA8E65641C48316100BECAF6 /* mmenu.m */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -583,6 +588,7 @@
 				DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
 				DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */,
+				DA8E65651C48316100BECAF6 /* mmenu.m in Sources */,
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
 				DAA82FBE1C47289C00C40A7C /* mhomebanners.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
