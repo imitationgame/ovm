@@ -5,6 +5,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setTitle:NSLocalizedString(@"home_main_title", nil)];
     [[analytics singleton] trackscreen:ga_screen_home];
 }
 
