@@ -8,3 +8,5 @@
 #import "mmenuprotocol.h"
 #import "mmenulocations.h"
 #import "mmenuabout.h"
+#import "mmenucontact.h"
+#import "mmenuservices.h"
