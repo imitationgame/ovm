@@ -12,7 +12,7 @@
     UILabel *lbl = [[UILabel alloc] init];
     [lbl setBackgroundColor:[UIColor clearColor]];
     [lbl setFont:[UIFont fontWithName:fontname size:20]];
-    [lbl setTextColor:[UIColor colorWithWhite:0 alpha:0.8]];
+    [lbl setTextColor:[UIColor colorWithWhite:0 alpha:0.7]];
     [lbl setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     self.lbl = lbl;
