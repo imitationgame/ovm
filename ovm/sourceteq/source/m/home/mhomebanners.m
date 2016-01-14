@@ -30,7 +30,10 @@
 
 -(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index
 {
-    return [col dequeueReusableCellWithReuseIdentifier:celname forIndexPath:index];
+    vhomecelbanner *cel = [col dequeueReusableCellWithReuseIdentifier:celname forIndexPath:index];
+    [cel.image setImage:[UIImage imageNamed:self.flyer]];
+    
+    return cel;
 }
 
 -(BOOL)selectable
