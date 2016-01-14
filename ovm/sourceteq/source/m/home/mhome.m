@@ -40,9 +40,9 @@
     return array.count;
 }
 
--(CGFloat)heightforitem:(NSInteger)item
+-(CGSize)sizeforitem:(NSInteger)item width:(CGFloat)width
 {
-    return [[self item:item] height];
+    return [[self item:item] sizeforwidth:width];
 }
 
 -(void)registercels:(UICollectionView*)col

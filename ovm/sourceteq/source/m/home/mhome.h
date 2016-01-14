@@ -3,7 +3,7 @@
 @interface mhome:NSObject
 
 -(NSInteger)count;
--(CGFloat)heightforitem:(NSInteger)item;
+-(CGSize)sizeforitem:(NSInteger)item width:(CGFloat)width;
 -(void)registercels:(UICollectionView*)col;
 -(UICollectionViewCell*)dequeuecel:(UICollectionView*)col index:(NSIndexPath*)index;
 -(BOOL)selectable:(NSInteger)item;

@@ -18,9 +18,9 @@
 #pragma mark -
 #pragma mark home protocol
 
--(CGFloat)height
+-(CGSize)sizeforwidth:(CGFloat)width
 {
-    return 290;
+    return CGSizeMake(width, 290);
 }
 
 -(void)registercel:(UICollectionView*)col

@@ -2,7 +2,7 @@
 
 @protocol mhomeprotocol <NSObject>
 
--(CGFloat)height;
+-(CGSize)sizeforwidth:(CGFloat)width;
 -(void)registercel:(UICollectionView*)col;
 -(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index;
 -(BOOL)selectable;
