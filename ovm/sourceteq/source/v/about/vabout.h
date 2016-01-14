@@ -4,6 +4,6 @@
 
 @interface vabout:UIView<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
-@property(strong, nonatomic)mabout *model
+@property(strong, nonatomic)mabout *model;
 
 @end
