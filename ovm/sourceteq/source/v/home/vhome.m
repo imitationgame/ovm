@@ -12,7 +12,7 @@
     [self setBackgroundColor:[UIColor colorWithWhite:0.98 alpha:1]];
     
     logoheight = 300;
-    logominheight = 22;
+    logominheight = 50;
     self.model = [[mhome alloc] init];
     
     vlogo *logo = [[vlogo alloc] init];
@@ -63,11 +63,6 @@
     if(newheight <= logominheight)
     {
         newheight = logominheight;
-        [self.logo showbackground:YES];
-    }
-    else
-    {
-        [self.logo showbackground:NO];
     }
     
     self.logoconst.constant = newheight;
