@@ -9,4 +9,6 @@
 "home_menu_locations"="Locations";
 "home_menu_about"="About";
 "home_menu_services"="Services";
-"home_menu_contact"="Contact us";
+"home_menu_contact"="Contact";
+
+"about_main_title"="About us";

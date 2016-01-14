@@ -53,6 +53,7 @@
 		DA8E658C1C4843FD00BECAF6 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65891C4843FD00BECAF6 /* phone@2x.png */; };
 		DA8E658D1C4843FD00BECAF6 /* phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8E658A1C4843FD00BECAF6 /* phone@3x.png */; };
 		DA8E65901C48458B00BECAF6 /* mhomespace.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E658F1C48458B00BECAF6 /* mhomespace.m */; };
+		DA8E65941C4848FA00BECAF6 /* cabout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65931C4848FA00BECAF6 /* cabout.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -148,6 +149,8 @@
 		DA8E658A1C4843FD00BECAF6 /* phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@3x.png"; sourceTree = "<group>"; };
 		DA8E658E1C48458B00BECAF6 /* mhomespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomespace.h; sourceTree = "<group>"; };
 		DA8E658F1C48458B00BECAF6 /* mhomespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mhomespace.m; sourceTree = "<group>"; };
+		DA8E65921C4848FA00BECAF6 /* cabout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cabout.h; sourceTree = "<group>"; };
+		DA8E65931C4848FA00BECAF6 /* cabout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cabout.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 				DA3F6E561C46EC18007E2888 /* alert */,
 				DABD83931C46F8A4003C28D3 /* home */,
 				DA3F6E5A1C46EC18007E2888 /* main */,
+				DA8E65911C4848DF00BECAF6 /* about */,
 			);
 			path = c;
 			sourceTree = "<group>";
@@ -453,6 +457,15 @@
 				DA8E65711C48360900BECAF6 /* mmenuservices.m */,
 			);
 			path = menu;
+			sourceTree = "<group>";
+		};
+		DA8E65911C4848DF00BECAF6 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E65921C4848FA00BECAF6 /* cabout.h */,
+				DA8E65931C4848FA00BECAF6 /* cabout.m */,
+			);
+			path = about;
 			sourceTree = "<group>";
 		};
 		DAA82FB41C47261900C40A7C /* home */ = {
@@ -677,6 +690,7 @@
 				DA8E65721C48360900BECAF6 /* mmenuservices.m in Sources */,
 				DAA82FBE1C47289C00C40A7C /* mhomebanners.m in Sources */,
 				DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */,
+				DA8E65941C4848FA00BECAF6 /* cabout.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
 				DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */,

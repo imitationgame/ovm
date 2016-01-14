@@ -5,6 +5,7 @@
 	<key>screens</key>
 	<array>
 		<string>home</string>
+		<string>about</string>
 	</array>
 	<key>events</key>
 	<array>

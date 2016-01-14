@@ -4,7 +4,8 @@
 
 typedef NS_ENUM(NSInteger, ga_screen)
 {
-    ga_screen_home
+    ga_screen_home,
+    ga_screen_about
 };
 
 typedef NS_ENUM(NSInteger, ga_event)
