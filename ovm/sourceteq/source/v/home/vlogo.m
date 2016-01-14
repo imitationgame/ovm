@@ -11,7 +11,7 @@
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     UIImageView *icon = [[UIImageView alloc] init];
-    [icon setContentMode:UIViewContentModeCenter];
+    [icon setContentMode:UIViewContentModeScaleAspectFit];
     [icon setClipsToBounds:YES];
     [icon setImage:[UIImage imageNamed:@"logo"]];
     [icon setTranslatesAutoresizingMaskIntoConstraints:NO];

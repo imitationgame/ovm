@@ -16,6 +16,7 @@
              [[mhomeservices alloc] init],
              [[mhomelocations alloc] init],
              [[mhomecontact alloc] init],
+             [[mhomeweb alloc] init],
              nil];
     
     return self;

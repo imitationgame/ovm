@@ -34,6 +34,7 @@
 		DAA82FC41C4728B300C40A7C /* mhomelocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FC31C4728B300C40A7C /* mhomelocations.m */; };
 		DAA82FC71C4728CF00C40A7C /* mhomeservices.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FC61C4728CF00C40A7C /* mhomeservices.m */; };
 		DAA82FCA1C4728E500C40A7C /* mhomecontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FC91C4728E500C40A7C /* mhomecontact.m */; };
+		DAA82FCD1C47341F00C40A7C /* mhomeweb.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FCC1C47341F00C40A7C /* mhomeweb.m */; };
 		DABD83961C46F8B4003C28D3 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83951C46F8B4003C28D3 /* chome.m */; };
 		DABD83981C46F950003C28D3 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD83971C46F950003C28D3 /* analytics.plist */; };
 		DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839B1C46FE0F003C28D3 /* vhome.m */; };
@@ -103,6 +104,8 @@
 		DAA82FC61C4728CF00C40A7C /* mhomeservices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mhomeservices.m; sourceTree = "<group>"; };
 		DAA82FC81C4728E500C40A7C /* mhomecontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomecontact.h; sourceTree = "<group>"; };
 		DAA82FC91C4728E500C40A7C /* mhomecontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mhomecontact.m; sourceTree = "<group>"; };
+		DAA82FCB1C47341F00C40A7C /* mhomeweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomeweb.h; sourceTree = "<group>"; };
+		DAA82FCC1C47341F00C40A7C /* mhomeweb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mhomeweb.m; sourceTree = "<group>"; };
 		DABD83941C46F8B4003C28D3 /* chome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chome.h; sourceTree = "<group>"; };
 		DABD83951C46F8B4003C28D3 /* chome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chome.m; sourceTree = "<group>"; };
 		DABD83971C46F950003C28D3 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
@@ -372,6 +375,8 @@
 				DAA82FC31C4728B300C40A7C /* mhomelocations.m */,
 				DAA82FC81C4728E500C40A7C /* mhomecontact.h */,
 				DAA82FC91C4728E500C40A7C /* mhomecontact.m */,
+				DAA82FCB1C47341F00C40A7C /* mhomeweb.h */,
+				DAA82FCC1C47341F00C40A7C /* mhomeweb.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA82FB71C47262C00C40A7C /* mhome.m in Sources */,
+				DAA82FCD1C47341F00C40A7C /* mhomeweb.m in Sources */,
 				DAA82FC71C4728CF00C40A7C /* mhomeservices.m in Sources */,
 				DA3F6E741C46EC18007E2888 /* main.m in Sources */,
 				DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */,

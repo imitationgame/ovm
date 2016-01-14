@@ -7,6 +7,7 @@
 
 @property(weak, nonatomic)vlogo *logo;
 @property(strong, nonatomic)mhome *model;
+@property(weak, nonatomic)NSLayoutConstraint *logoconst;
 @property(weak, nonatomic)UICollectionView *collection;
 
 @end
