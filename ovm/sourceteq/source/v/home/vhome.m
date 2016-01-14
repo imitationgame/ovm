@@ -96,4 +96,13 @@
     return [self.model dequeuecel:col index:index];
 }
 
+-(BOOL)collectionView:(UICollectionView*)col shouldSelectItemAtIndexPath:(NSIndexPath*)index
+{
+    return [self.model selectable:index.item];
+}
+
+-(void)collectionView:(UICollectionView*)col didSelectItemAtIndexPath:(NSIndexPath*)index
+{
+}
+
 @end
