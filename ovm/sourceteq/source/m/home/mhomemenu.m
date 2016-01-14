@@ -19,7 +19,7 @@
 
 -(CGSize)sizeforwidth:(CGFloat)width
 {
-    return CGSizeMake(width, 60);
+    return CGSizeMake(width, 100);
 }
 
 -(void)registercel:(UICollectionView*)col

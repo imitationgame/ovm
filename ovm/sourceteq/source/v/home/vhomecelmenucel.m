@@ -6,11 +6,12 @@
 {
     self = [super initWithFrame:frame];
     [self setClipsToBounds:YES];
+    [self setBackgroundColor:[UIColor clearColor]];
     
     UILabel *lbl = [[UILabel alloc] init];
     [lbl setBackgroundColor:[UIColor clearColor]];
     [lbl setTextAlignment:NSTextAlignmentCenter];
-    [lbl setFont:[UIFont fontWithName:fontname size:12]];
+    [lbl setFont:[UIFont fontWithName:fontname size:11]];
     [lbl setUserInteractionEnabled:NO];
     [lbl setTranslatesAutoresizingMaskIntoConstraints:NO];
     self.lbl = lbl;
@@ -22,16 +23,26 @@
     [icon setTranslatesAutoresizingMaskIntoConstraints:NO];
     self.icon = icon;
     
+    UIView *background = [[UIView alloc] init];
+    [background setUserInteractionEnabled:NO];
+    [background setClipsToBounds:YES];
+    [background.layer setCornerRadius:4];
+    [background setTranslatesAutoresizingMaskIntoConstraints:NO];
+    self.background = background;
+    
+    [self addSubview:background];
     [self addSubview:icon];
     [self addSubview:lbl];
     
-    NSDictionary *views = @{@"lbl":lbl, @"icon":icon};
+    NSDictionary *views = @{@"lbl":lbl, @"icon":icon, @"back":background};
     NSDictionary *metrics = @{};
     
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[lbl]-20-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[lbl]-5-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-2-[lbl]-2-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[lbl]-25-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[icon]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[icon]-15-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[icon]-45-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-1-[back]-1-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[back]-20-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -56,13 +67,13 @@
     {
         [self.icon setTintColor:[UIColor whiteColor]];
         [self.lbl setTextColor:[UIColor whiteColor]];
-        [self setBackgroundColor:colormain];
+        [self.background setBackgroundColor:colormain];
     }
     else
     {
         [self.icon setTintColor:colormain];
         [self.lbl setTextColor:colormain];
-        [self setBackgroundColor:[UIColor clearColor]];
+        [self.background setBackgroundColor:[UIColor clearColor]];
     }
 }
 
