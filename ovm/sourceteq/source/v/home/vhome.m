@@ -33,6 +33,7 @@
     [collection setDataSource:self];
     [collection registerClass:[vhomecel class] forCellWithReuseIdentifier:celid];
     [collection registerClass:[vhomeceltitle class] forCellWithReuseIdentifier:headerid];
+    [collection registerClass:[vhomecelbanner class] forCellWithReuseIdentifier:footerid];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     [self addSubview:logo];
@@ -70,10 +71,15 @@
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
     vhomecel *cel;
+    NSInteger item = index.item;
     
-    if(index.item)
+    if(item > 1)
     {
         cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    }
+    else if(item == 1)
+    {
+        
     }
     else
     {

@@ -5,4 +5,5 @@
 #import "vlogo.h"
 #import "vhomecel.h"
 #import "vhomeceltitle.h"
+#import "vhomecelbanner.h"
 #import "valert.h"
