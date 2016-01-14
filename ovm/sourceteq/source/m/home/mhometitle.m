@@ -5,11 +5,13 @@
     NSString *celname;
 }
 
--(instancetype)init
+-(instancetype)init:(NSString*)title fontsize:(CGFloat)fontsize
 {
     self = [super init];
     
     celname = @"title";
+    self.title = title;
+    self.fontsize = fontsize;
     
     return self;
 }
@@ -29,7 +31,11 @@
 
 -(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index
 {
-    return [col dequeueReusableCellWithReuseIdentifier:celname forIndexPath:index];
+    vhomeceltitle *cel = [col dequeueReusableCellWithReuseIdentifier:celname forIndexPath:index];
+    [cel.lbl setText:self.title];
+    [cel.lbl setFont:[UIFont fontWithName:fontname size:self.fontsize]];
+    
+    return cel;
 }
 
 -(BOOL)selectable

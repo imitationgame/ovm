@@ -13,8 +13,9 @@
     NSInteger count = flyers.count;
     
     array = [NSMutableArray array];
-    [array addObject:[[mhometitle alloc] init]];
+    [array addObject:[[mhometitle alloc] init:NSLocalizedString(@"home_title", nil) fontsize:15]];
     [array addObject:[[mhomemenu alloc] init]];
+    [array addObject:[[mhometitle alloc] init:NSLocalizedString(@"home_title_banners", nil) fontsize:13]];
     
     for(NSInteger i = 0; i < count; i++)
     {
