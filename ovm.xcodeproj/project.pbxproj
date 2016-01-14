@@ -57,6 +57,7 @@
 		DA8E65981C4849E900BECAF6 /* vabout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65971C4849E900BECAF6 /* vabout.m */; };
 		DA8E659B1C484B3400BECAF6 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65991C484B3400BECAF6 /* about.plist */; };
 		DA8E65A01C484DE300BECAF6 /* mabout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E659F1C484DE300BECAF6 /* mabout.m */; };
+		DA8E65A31C48508E00BECAF6 /* maboutitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65A21C48508E00BECAF6 /* maboutitem.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -160,6 +161,8 @@
 		DA8E659C1C484B3C00BECAF6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/about.plist; sourceTree = "<group>"; };
 		DA8E659E1C484DE300BECAF6 /* mabout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mabout.h; sourceTree = "<group>"; };
 		DA8E659F1C484DE300BECAF6 /* mabout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mabout.m; sourceTree = "<group>"; };
+		DA8E65A11C48508E00BECAF6 /* maboutitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maboutitem.h; sourceTree = "<group>"; };
+		DA8E65A21C48508E00BECAF6 /* maboutitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = maboutitem.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -494,6 +497,8 @@
 			children = (
 				DA8E659E1C484DE300BECAF6 /* mabout.h */,
 				DA8E659F1C484DE300BECAF6 /* mabout.m */,
+				DA8E65A11C48508E00BECAF6 /* maboutitem.h */,
+				DA8E65A21C48508E00BECAF6 /* maboutitem.m */,
 			);
 			path = about;
 			sourceTree = "<group>";
@@ -726,6 +731,7 @@
 				DA8E65941C4848FA00BECAF6 /* cabout.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
+				DA8E65A31C48508E00BECAF6 /* maboutitem.m in Sources */,
 				DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
