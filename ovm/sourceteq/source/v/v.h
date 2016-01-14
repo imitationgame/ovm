@@ -6,4 +6,5 @@
 #import "vhomeceltitle.h"
 #import "vhomecelbanner.h"
 #import "vhomecelmenu.h"
+#import "vhomecelmenucel.h"
 #import "valert.h"

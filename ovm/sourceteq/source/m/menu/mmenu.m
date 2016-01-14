@@ -10,7 +10,10 @@
     self = [super init];
     
     array = [NSArray arrayWithObjects:
+             [[mmenuabout alloc] init],
+             [[mmenuservices alloc] init],
              [[mmenulocations alloc] init],
+             [[mmenucontact alloc] init],
              nil];
     
     return self;
