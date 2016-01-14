@@ -17,7 +17,7 @@
 
 -(NSString*)image
 {
-    return @"";
+    return @"about";
 }
 
 @end
