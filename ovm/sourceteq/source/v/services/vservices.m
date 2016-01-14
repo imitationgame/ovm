@@ -27,6 +27,7 @@
 {
     vservicescel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
     
+    
     return cel;
 }
 
