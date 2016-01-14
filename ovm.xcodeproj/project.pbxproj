@@ -61,6 +61,7 @@
 		DA8E65A61C48540100BECAF6 /* vaboutcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65A51C48540100BECAF6 /* vaboutcel.m */; };
 		DA8E65AA1C485ED500BECAF6 /* cservices.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65A91C485ED500BECAF6 /* cservices.m */; };
 		DA8E65AE1C48623200BECAF6 /* vservices.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65AD1C48623200BECAF6 /* vservices.m */; };
+		DA8E65B11C48647400BECAF6 /* vservicescel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65B01C48647400BECAF6 /* vservicescel.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -172,6 +173,8 @@
 		DA8E65A91C485ED500BECAF6 /* cservices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cservices.m; sourceTree = "<group>"; };
 		DA8E65AC1C48623200BECAF6 /* vservices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vservices.h; sourceTree = "<group>"; };
 		DA8E65AD1C48623200BECAF6 /* vservices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vservices.m; sourceTree = "<group>"; };
+		DA8E65AF1C48647400BECAF6 /* vservicescel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vservicescel.h; sourceTree = "<group>"; };
+		DA8E65B01C48647400BECAF6 /* vservicescel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vservicescel.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -530,6 +533,8 @@
 			children = (
 				DA8E65AC1C48623200BECAF6 /* vservices.h */,
 				DA8E65AD1C48623200BECAF6 /* vservices.m */,
+				DA8E65AF1C48647400BECAF6 /* vservicescel.h */,
+				DA8E65B01C48647400BECAF6 /* vservicescel.m */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -735,6 +740,7 @@
 				DAA82FB71C47262C00C40A7C /* mhome.m in Sources */,
 				DA3F6E741C46EC18007E2888 /* main.m in Sources */,
 				DA8E65751C4837E000BECAF6 /* vhomecelmenucel.m in Sources */,
+				DA8E65B11C48647400BECAF6 /* vservicescel.m in Sources */,
 				DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */,
 				DA3F6E721C46EC18007E2888 /* appdel.m in Sources */,
 				DA8E656F1C4835FF00BECAF6 /* mmenucontact.m in Sources */,

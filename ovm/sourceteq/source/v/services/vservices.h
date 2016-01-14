@@ -1,5 +1,5 @@
 #import "appdel.h"
 
-@interface vservices:UIView
+@interface vservices:UIView<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @end

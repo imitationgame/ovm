@@ -11,3 +11,4 @@
 #import "vabout.h"
 #import "vaboutcel.h"
 #import "vservices.h"
+#import "vservicescel.h"
