@@ -2,9 +2,10 @@
 
 @implementation vhomecelmenu
 
--(instancetype)init
+-(instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
+    [self setBackgroundColor:[UIColor whiteColor]];
     
     return self;
 }

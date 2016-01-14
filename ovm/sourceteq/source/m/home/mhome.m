@@ -11,12 +11,8 @@
     
     array = [NSArray arrayWithObjects:
              [[mhometitle alloc] init],
+             [[mhomemenu alloc] init],
              [[mhomebanners alloc] init],
-             [[mhomeabout alloc] init],
-             [[mhomeservices alloc] init],
-             [[mhomelocations alloc] init],
-             [[mhomecontact alloc] init],
-             [[mhomeweb alloc] init],
              nil];
     
     return self;

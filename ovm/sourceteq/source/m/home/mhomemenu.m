@@ -1,6 +1,6 @@
-#import "mhomebanners.h"
+#import "mhomemenu.h"
 
-@implementation mhomebanners
+@implementation mhomemenu
 {
     NSString *celname;
 }
@@ -9,7 +9,7 @@
 {
     self = [super init];
     
-    celname = @"banners";
+    celname = @"menu";
     
     return self;
 }
@@ -19,12 +19,12 @@
 
 -(CGFloat)height
 {
-    return 270;
+    return 60;
 }
 
 -(void)registercel:(UICollectionView*)col
 {
-    [col registerClass:[vhomecelbanner class] forCellWithReuseIdentifier:celname];
+    [col registerClass:[vhomecelmenu class] forCellWithReuseIdentifier:celname];
 }
 
 -(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index
