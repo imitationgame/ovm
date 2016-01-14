@@ -11,4 +11,9 @@
     [[analytics singleton] trackscreen:ga_screen_about];
 }
 
+-(void)loadView
+{
+    self.view = [[vabout alloc] init];
+}
+
 @end
