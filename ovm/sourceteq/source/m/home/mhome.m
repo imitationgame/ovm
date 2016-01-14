@@ -2,18 +2,26 @@
 
 @implementation mhome
 {
-    NSArray *array;
+    NSMutableArray *array;
 }
 
 -(instancetype)init
 {
     self = [super init];
     
-    array = [NSArray arrayWithObjects:
-             [[mhometitle alloc] init],
-             [[mhomemenu alloc] init],
-             [[mhomebanners alloc] init],
-             nil];
+    NSArray *flyers = [NSArray arrayWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"flyers" withExtension:@"plist"]];
+    NSInteger count = flyers.count;
+    
+    array = [NSMutableArray array];
+    [array addObject:[[mhometitle alloc] init]];
+    [array addObject:[[mhomemenu alloc] init]];
+    
+    for(NSInteger i = 0; i < count; i++)
+    {
+        NSString *flyername = flyers[i];
+        mhomebanners *banner = [[mhomebanners alloc] init:flyername];
+        [array addObject:banner];
+    }
     
     return self;
 }

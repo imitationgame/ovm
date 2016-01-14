@@ -8,7 +8,8 @@
 -(instancetype)init:(NSString*)flyer
 {
     self = [super init];
-    
+
+    self.flyer = flyer;
     celname = @"banners";
     
     return self;
@@ -19,7 +20,7 @@
 
 -(CGFloat)height
 {
-    return 270;
+    return 290;
 }
 
 -(void)registercel:(UICollectionView*)col
