@@ -32,6 +32,7 @@
     [collection registerClass:[vhomeheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerid];
     [collection registerClass:[vhomefooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:footerid];
     [collection registerClass:[vhomecel class] forCellWithReuseIdentifier:celid];
+    [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     [self addSubview:logo];
     [self addSubview:collection];
