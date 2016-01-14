@@ -2,6 +2,8 @@
 
 @protocol mmenuprotocol <NSObject>
 
--()
+-(Class)controller;
+-(NSString*)title;
+-(NSString*)image;
 
 @end

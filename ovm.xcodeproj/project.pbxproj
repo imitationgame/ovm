@@ -35,6 +35,8 @@
 		DA8E655F1C47F94000BECAF6 /* flyer05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65551C47F94000BECAF6 /* flyer05@2x.jpg */; };
 		DA8E65611C47F96900BECAF6 /* flyers.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65601C47F96900BECAF6 /* flyers.plist */; };
 		DA8E65651C48316100BECAF6 /* mmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65641C48316100BECAF6 /* mmenu.m */; };
+		DA8E65691C48332A00BECAF6 /* mmenulocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65681C48332A00BECAF6 /* mmenulocations.m */; };
+		DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E656B1C4834F200BECAF6 /* mmenuabout.m */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -106,6 +108,10 @@
 		DA8E65631C48316100BECAF6 /* mmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenu.h; sourceTree = "<group>"; };
 		DA8E65641C48316100BECAF6 /* mmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmenu.m; sourceTree = "<group>"; };
 		DA8E65661C48327F00BECAF6 /* mmenuprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenuprotocol.h; sourceTree = "<group>"; };
+		DA8E65671C48332A00BECAF6 /* mmenulocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenulocations.h; sourceTree = "<group>"; };
+		DA8E65681C48332A00BECAF6 /* mmenulocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmenulocations.m; sourceTree = "<group>"; };
+		DA8E656A1C4834F200BECAF6 /* mmenuabout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenuabout.h; sourceTree = "<group>"; };
+		DA8E656B1C4834F200BECAF6 /* mmenuabout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmenuabout.m; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -389,6 +395,10 @@
 				DA8E65631C48316100BECAF6 /* mmenu.h */,
 				DA8E65641C48316100BECAF6 /* mmenu.m */,
 				DA8E65661C48327F00BECAF6 /* mmenuprotocol.h */,
+				DA8E65671C48332A00BECAF6 /* mmenulocations.h */,
+				DA8E65681C48332A00BECAF6 /* mmenulocations.m */,
+				DA8E656A1C4834F200BECAF6 /* mmenuabout.h */,
+				DA8E656B1C4834F200BECAF6 /* mmenuabout.m */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -582,6 +592,7 @@
 				DAA82FAA1C470F0D00C40A7C /* vlogo.m in Sources */,
 				DA3F6E781C46EC18007E2888 /* calert.m in Sources */,
 				DAA82FB31C47256D00C40A7C /* vhomecelbanner.m in Sources */,
+				DA8E65691C48332A00BECAF6 /* mmenulocations.m in Sources */,
 				DA3F6E751C46EC18007E2888 /* analytics.m in Sources */,
 				DA3F6E791C46EC18007E2888 /* cmain.m in Sources */,
 				DABD83961C46F8B4003C28D3 /* chome.m in Sources */,
@@ -593,6 +604,7 @@
 				DA8E65651C48316100BECAF6 /* mmenu.m in Sources */,
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
 				DAA82FBE1C47289C00C40A7C /* mhomebanners.m in Sources */,
+				DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
 				DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */,

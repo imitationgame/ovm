@@ -5,3 +5,6 @@
 #import "mhomemenu.h"
 #import "mhomebanners.h"
 #import "mmenu.h"
+#import "mmenuprotocol.h"
+#import "mmenulocations.h"
+#import "mmenuabout.h"

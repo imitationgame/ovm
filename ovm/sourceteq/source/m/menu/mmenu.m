@@ -9,7 +9,9 @@
 {
     self = [super init];
     
-    array = [NSArray arrayWithObjects:nil];
+    array = [NSArray arrayWithObjects:
+             [[mmenulocations alloc] init],
+             nil];
     
     return self;
 }
@@ -21,6 +23,9 @@
     return array.count;
 }
 
-
+-(id<mmenuprotocol>)item:(NSInteger)item
+{
+    return array[item];
+}
 
 @end
