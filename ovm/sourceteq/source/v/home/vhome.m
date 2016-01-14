@@ -79,7 +79,7 @@
     }
     else if(item == 1)
     {
-        
+        cel = [col dequeueReusableCellWithReuseIdentifier:footerid forIndexPath:index];
     }
     else
     {

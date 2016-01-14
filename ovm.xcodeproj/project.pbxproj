@@ -27,6 +27,7 @@
 		DAA82FAA1C470F0D00C40A7C /* vlogo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FA91C470F0D00C40A7C /* vlogo.m */; };
 		DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FAC1C4721D100C40A7C /* vhomeceltitle.m */; };
 		DAA82FB31C47256D00C40A7C /* vhomecelbanner.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FB21C47256D00C40A7C /* vhomecelbanner.m */; };
+		DAA82FB71C47262C00C40A7C /* mhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FB61C47262C00C40A7C /* mhome.m */; };
 		DABD83961C46F8B4003C28D3 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83951C46F8B4003C28D3 /* chome.m */; };
 		DABD83981C46F950003C28D3 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD83971C46F950003C28D3 /* analytics.plist */; };
 		DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839B1C46FE0F003C28D3 /* vhome.m */; };
@@ -81,6 +82,9 @@
 		DAA82FAC1C4721D100C40A7C /* vhomeceltitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomeceltitle.m; sourceTree = "<group>"; };
 		DAA82FB11C47256D00C40A7C /* vhomecelbanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelbanner.h; sourceTree = "<group>"; };
 		DAA82FB21C47256D00C40A7C /* vhomecelbanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelbanner.m; sourceTree = "<group>"; };
+		DAA82FB51C47262C00C40A7C /* mhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhome.h; sourceTree = "<group>"; };
+		DAA82FB61C47262C00C40A7C /* mhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mhome.m; sourceTree = "<group>"; };
+		DAA82FB81C47264100C40A7C /* mhomeprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomeprotocol.h; sourceTree = "<group>"; };
 		DABD83941C46F8B4003C28D3 /* chome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chome.h; sourceTree = "<group>"; };
 		DABD83951C46F8B4003C28D3 /* chome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chome.m; sourceTree = "<group>"; };
 		DABD83971C46F950003C28D3 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
@@ -276,8 +280,9 @@
 		DA3F6E5D1C46EC18007E2888 /* m */ = {
 			isa = PBXGroup;
 			children = (
-				DA3F6E5E1C46EC18007E2888 /* general */,
 				DA3F6E621C46EC18007E2888 /* m.h */,
+				DAA82FB41C47261900C40A7C /* home */,
+				DA3F6E5E1C46EC18007E2888 /* general */,
 			);
 			path = m;
 			sourceTree = "<group>";
@@ -329,6 +334,16 @@
 			children = (
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		DAA82FB41C47261900C40A7C /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DAA82FB51C47262C00C40A7C /* mhome.h */,
+				DAA82FB61C47262C00C40A7C /* mhome.m */,
+				DAA82FB81C47264100C40A7C /* mhomeprotocol.h */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 		DABD83931C46F8A4003C28D3 /* home */ = {
@@ -485,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA82FB71C47262C00C40A7C /* mhome.m in Sources */,
 				DA3F6E741C46EC18007E2888 /* main.m in Sources */,
 				DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */,
 				DA3F6E721C46EC18007E2888 /* appdel.m in Sources */,
