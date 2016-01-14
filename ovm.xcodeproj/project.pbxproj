@@ -323,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				DA3F6E621C46EC18007E2888 /* m.h */,
+				DA8E65621C4808B200BECAF6 /* menu */,
 				DAA82FB41C47261900C40A7C /* home */,
 				DA3F6E5E1C46EC18007E2888 /* general */,
 			);
@@ -376,6 +377,13 @@
 			children = (
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		DA8E65621C4808B200BECAF6 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = menu;
 			sourceTree = "<group>";
 		};
 		DAA82FB41C47261900C40A7C /* home */ = {

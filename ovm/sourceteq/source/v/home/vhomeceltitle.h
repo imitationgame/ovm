@@ -2,4 +2,6 @@
 
 @interface vhomeceltitle:UICollectionViewCell
 
+@property(weak, nonatomic)UILabel *lbl;
+
 @end
