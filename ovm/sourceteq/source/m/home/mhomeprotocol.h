@@ -1,13 +1,9 @@
-//
-//  mhomeprotocol.h
-//  ovm
-//
-//  Created by zero on 1/13/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol mhomeprotocol <NSObject>
+
+-(CGFloat)height;
+-(void)registercel:(UICollectionView*)col;
+-(UICollectionViewCell*)dequeue:(UICollectionView*)col index:(NSIndexPath*)index;
 
 @end
