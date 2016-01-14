@@ -1,5 +1,5 @@
 #import "appdel.h"
 
-@interface mmenuabout : NSObject
+@interface mmenuabout:NSObject<mmenuprotocol>
 
 @end

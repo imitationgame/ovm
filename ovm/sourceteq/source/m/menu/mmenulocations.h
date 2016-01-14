@@ -1,13 +1,5 @@
-//
-//  mmenulocations.h
-//  ovm
-//
-//  Created by zero on 1/14/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
-
-@interface mmenulocations : NSObject
+@interface mmenulocations:NSObject<mmenuprotocol>
 
 @end
