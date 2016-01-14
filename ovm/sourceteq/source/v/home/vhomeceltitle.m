@@ -1,6 +1,6 @@
-#import "vhomeheader.h"
+#import "vhomeceltitle.h"
 
-@implementation vhomeheader
+@implementation vhomeceltitle
 
 -(instancetype)initWithFrame:(CGRect)frame
 {

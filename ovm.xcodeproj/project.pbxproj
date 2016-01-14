@@ -25,10 +25,10 @@
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
 		DAA82FAA1C470F0D00C40A7C /* vlogo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FA91C470F0D00C40A7C /* vlogo.m */; };
+		DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA82FAC1C4721D100C40A7C /* vhomeceltitle.m */; };
 		DABD83961C46F8B4003C28D3 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83951C46F8B4003C28D3 /* chome.m */; };
 		DABD83981C46F950003C28D3 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD83971C46F950003C28D3 /* analytics.plist */; };
 		DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839B1C46FE0F003C28D3 /* vhome.m */; };
-		DABD839F1C470044003C28D3 /* vhomeheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD839E1C470044003C28D3 /* vhomeheader.m */; };
 		DABD83A21C47004D003C28D3 /* vhomecel.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83A11C47004D003C28D3 /* vhomecel.m */; };
 		DABD83A51C470068003C28D3 /* vhomefooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD83A41C470068003C28D3 /* vhomefooter.m */; };
 		DABD83A71C4707A0003C28D3 /* in in Resources */ = {isa = PBXBuildFile; fileRef = DABD83A61C4707A0003C28D3 /* in */; };
@@ -77,13 +77,13 @@
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 		DAA82FA81C470F0D00C40A7C /* vlogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlogo.h; sourceTree = "<group>"; };
 		DAA82FA91C470F0D00C40A7C /* vlogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlogo.m; sourceTree = "<group>"; };
+		DAA82FAB1C4721D100C40A7C /* vhomeceltitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomeceltitle.h; sourceTree = "<group>"; };
+		DAA82FAC1C4721D100C40A7C /* vhomeceltitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomeceltitle.m; sourceTree = "<group>"; };
 		DABD83941C46F8B4003C28D3 /* chome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chome.h; sourceTree = "<group>"; };
 		DABD83951C46F8B4003C28D3 /* chome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chome.m; sourceTree = "<group>"; };
 		DABD83971C46F950003C28D3 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DABD839A1C46FE0F003C28D3 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
 		DABD839B1C46FE0F003C28D3 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
-		DABD839D1C470044003C28D3 /* vhomeheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomeheader.h; sourceTree = "<group>"; };
-		DABD839E1C470044003C28D3 /* vhomeheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomeheader.m; sourceTree = "<group>"; };
 		DABD83A01C47004D003C28D3 /* vhomecel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecel.h; sourceTree = "<group>"; };
 		DABD83A11C47004D003C28D3 /* vhomecel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecel.m; sourceTree = "<group>"; };
 		DABD83A31C470068003C28D3 /* vhomefooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomefooter.h; sourceTree = "<group>"; };
@@ -347,12 +347,12 @@
 				DABD839B1C46FE0F003C28D3 /* vhome.m */,
 				DAA82FA81C470F0D00C40A7C /* vlogo.h */,
 				DAA82FA91C470F0D00C40A7C /* vlogo.m */,
-				DABD839D1C470044003C28D3 /* vhomeheader.h */,
-				DABD839E1C470044003C28D3 /* vhomeheader.m */,
 				DABD83A31C470068003C28D3 /* vhomefooter.h */,
 				DABD83A41C470068003C28D3 /* vhomefooter.m */,
 				DABD83A01C47004D003C28D3 /* vhomecel.h */,
 				DABD83A11C47004D003C28D3 /* vhomecel.m */,
+				DAA82FAB1C4721D100C40A7C /* vhomeceltitle.h */,
+				DAA82FAC1C4721D100C40A7C /* vhomeceltitle.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -485,7 +485,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABD839F1C470044003C28D3 /* vhomeheader.m in Sources */,
 				DA3F6E741C46EC18007E2888 /* main.m in Sources */,
 				DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */,
 				DA3F6E721C46EC18007E2888 /* appdel.m in Sources */,
@@ -502,6 +501,7 @@
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
+				DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
