@@ -5,7 +5,7 @@
     NSString *celname;
 }
 
--(instancetype)init
+-(instancetype)init:(NSString*)flyer
 {
     self = [super init];
     

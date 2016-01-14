@@ -33,6 +33,7 @@
 		DA8E655D1C47F94000BECAF6 /* flyer04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65531C47F94000BECAF6 /* flyer04@2x.jpg */; };
 		DA8E655E1C47F94000BECAF6 /* flyer05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65541C47F94000BECAF6 /* flyer05.jpg */; };
 		DA8E655F1C47F94000BECAF6 /* flyer05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65551C47F94000BECAF6 /* flyer05@2x.jpg */; };
+		DA8E65611C47F96900BECAF6 /* flyers.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA8E65601C47F96900BECAF6 /* flyers.plist */; };
 		DAA82FA51C470E8C00C40A7C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA21C470E8C00C40A7C /* logo.png */; };
 		DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA31C470E8C00C40A7C /* logo@2x.png */; };
 		DAA82FA71C470E8C00C40A7C /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA82FA41C470E8C00C40A7C /* logo@3x.png */; };
@@ -100,6 +101,7 @@
 		DA8E65531C47F94000BECAF6 /* flyer04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flyer04@2x.jpg"; sourceTree = "<group>"; };
 		DA8E65541C47F94000BECAF6 /* flyer05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flyer05.jpg; sourceTree = "<group>"; };
 		DA8E65551C47F94000BECAF6 /* flyer05@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flyer05@2x.jpg"; sourceTree = "<group>"; };
+		DA8E65601C47F96900BECAF6 /* flyers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flyers.plist; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				DA3F6E3D1C46EC18007E2888 /* defs.plist */,
 				DABD83971C46F950003C28D3 /* analytics.plist */,
 				DA3F6E3E1C46EC18007E2888 /* Localizable.strings */,
+				DA8E65601C47F96900BECAF6 /* flyers.plist */,
 			);
 			path = langteq;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				DAA82FA51C470E8C00C40A7C /* logo.png in Resources */,
 				DA8E65571C47F94000BECAF6 /* flyer01@2x.jpg in Resources */,
 				DABD83981C46F950003C28D3 /* analytics.plist in Resources */,
+				DA8E65611C47F96900BECAF6 /* flyers.plist in Resources */,
 				DA8E655C1C47F94000BECAF6 /* flyer04.jpg in Resources */,
 				DA8E655A1C47F94000BECAF6 /* flyer03.jpg in Resources */,
 				DAA82FA61C470E8C00C40A7C /* logo@2x.png in Resources */,
