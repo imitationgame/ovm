@@ -11,6 +11,7 @@
     [self setBackgroundColor:[UIColor colorWithWhite:0.98 alpha:1]];
     
     logoheight = 300;
+    self.model = [[mhome alloc] init];
     
     vlogo *logo = [[vlogo alloc] init];
     self.logo = logo;
@@ -31,10 +32,8 @@
     [collection setAlwaysBounceVertical:YES];
     [collection setDelegate:self];
     [collection setDataSource:self];
-    [collection registerClass:[vhomecel class] forCellWithReuseIdentifier:celid];
-    [collection registerClass:[vhomeceltitle class] forCellWithReuseIdentifier:headerid];
-    [collection registerClass:[vhomecelbanner class] forCellWithReuseIdentifier:footerid];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.model registercels:collection];
     
     [self addSubview:logo];
     [self addSubview:collection];
@@ -55,7 +54,7 @@
 
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
 {
-    return CGSizeMake(self.bounds.size.width, 60);
+    return CGSizeMake(self.bounds.size.width, [self.model heightforitem:index.item]);
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
@@ -70,23 +69,7 @@
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
-    vhomecel *cel;
-    NSInteger item = index.item;
-    
-    if(item > 1)
-    {
-        cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
-    }
-    else if(item == 1)
-    {
-        cel = [col dequeueReusableCellWithReuseIdentifier:footerid forIndexPath:index];
-    }
-    else
-    {
-        cel = [col dequeueReusableCellWithReuseIdentifier:headerid forIndexPath:index];
-    }
-    
-    return cel;
+    return [self.model dequeuecel:col index:index];
 }
 
 @end
