@@ -20,5 +20,17 @@
         <key>descr</key>
         <string>Gracias a la cual ampliamos, amparamos y respaldamos su negocio con nuestros servicios</string>
     </dict>
+    <dict>
+        <key>title</key>
+        <string>Capacidad</string>
+        <key>descr</key>
+        <string>Podemos atender tus eventos especiales, tenemos lugar para todos y con ambientes diferentes, los 365 dias del año</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>Tecnologia</string>
+        <key>descr</key>
+        <string>Fibra optica, equipo para proyeccion, impresoras, equipo de video conferencias, nuestras instalaciones estan completamente equipadas para tus necesidades</string>
+    </dict>
 </array>
 </plist>
