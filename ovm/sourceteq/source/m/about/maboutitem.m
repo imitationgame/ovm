@@ -11,7 +11,7 @@
     
     self.string = [[NSMutableAttributedString alloc] init];
     [self.string appendAttributedString:[[NSAttributedString alloc] initWithString:title attributes:attrtitle]];
-    [self.string appendAttributedString:[[NSAttributedString alloc] initWithString:descr attributes:attrdescr]];
+    [self.string appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n" attributes:attrdescr]];
     [self.string appendAttributedString:[[NSAttributedString alloc] initWithString:descr attributes:attrdescr]];
     
     return self;
