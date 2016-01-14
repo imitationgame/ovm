@@ -105,6 +105,7 @@
 		DA8E65601C47F96900BECAF6 /* flyers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flyers.plist; sourceTree = "<group>"; };
 		DA8E65631C48316100BECAF6 /* mmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenu.h; sourceTree = "<group>"; };
 		DA8E65641C48316100BECAF6 /* mmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmenu.m; sourceTree = "<group>"; };
+		DA8E65661C48327F00BECAF6 /* mmenuprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmenuprotocol.h; sourceTree = "<group>"; };
 		DAA82FA21C470E8C00C40A7C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DAA82FA31C470E8C00C40A7C /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		DAA82FA41C470E8C00C40A7C /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -387,6 +388,7 @@
 			children = (
 				DA8E65631C48316100BECAF6 /* mmenu.h */,
 				DA8E65641C48316100BECAF6 /* mmenu.m */,
+				DA8E65661C48327F00BECAF6 /* mmenuprotocol.h */,
 			);
 			path = menu;
 			sourceTree = "<group>";
