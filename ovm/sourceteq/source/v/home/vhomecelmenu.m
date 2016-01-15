@@ -27,6 +27,7 @@
     [collection registerClass:[vhomecelmenucel class] forCellWithReuseIdentifier:celid];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
     
+    self.collection = collection;
     [self addSubview:collection];
     
     NSDictionary *views = @{@"col":collection};
@@ -69,6 +70,12 @@
 -(void)collectionView:(UICollectionView*)col didSelectItemAtIndexPath:(NSIndexPath*)index
 {
     [[cmain singleton] pushViewController:[[[[self.model item:index.item] controller] alloc] init] animated:YES];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(),
+                   ^(void)
+                   {
+                       [self.collection reloadData];
+                   });
 }
 
 @end
