@@ -21,6 +21,10 @@
 		DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E691C46EC18007E2888 /* vblur.m */; };
 		DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6B1C46EC18007E2888 /* viewbase.m */; };
 		DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F6E6D1C46EC18007E2888 /* vspinner.m */; };
+		DA4D56E81C48710C00C09C6F /* mlocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56E71C48710C00C09C6F /* mlocations.m */; };
+		DA4D56EB1C48711800C09C6F /* mlocationsitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56EA1C48711800C09C6F /* mlocationsitem.m */; };
+		DA4D56EE1C48713100C09C6F /* clocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56ED1C48713100C09C6F /* clocations.m */; };
+		DA4D56F11C4871BC00C09C6F /* vlocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F01C4871BC00C09C6F /* vlocations.m */; };
 		DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */; };
 		DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */; };
 		DA8E65561C47F94000BECAF6 /* flyer01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E654C1C47F94000BECAF6 /* flyer01.jpg */; };
@@ -118,6 +122,14 @@
 		DA3F6E6D1C46EC18007E2888 /* vspinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vspinner.m; sourceTree = "<group>"; };
 		DA3F6E6F1C46EC18007E2888 /* v.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v.h; sourceTree = "<group>"; };
 		DA4D56E21C48668300C09C6F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/services.plist; sourceTree = "<group>"; };
+		DA4D56E61C48710C00C09C6F /* mlocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlocations.h; sourceTree = "<group>"; };
+		DA4D56E71C48710C00C09C6F /* mlocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mlocations.m; sourceTree = "<group>"; };
+		DA4D56E91C48711800C09C6F /* mlocationsitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mlocationsitem.h; sourceTree = "<group>"; };
+		DA4D56EA1C48711800C09C6F /* mlocationsitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mlocationsitem.m; sourceTree = "<group>"; };
+		DA4D56EC1C48713100C09C6F /* clocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clocations.h; sourceTree = "<group>"; };
+		DA4D56ED1C48713100C09C6F /* clocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clocations.m; sourceTree = "<group>"; };
+		DA4D56EF1C4871BC00C09C6F /* vlocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlocations.h; sourceTree = "<group>"; };
+		DA4D56F01C4871BC00C09C6F /* vlocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlocations.m; sourceTree = "<group>"; };
 		DA8E65461C47F4F600BECAF6 /* vhomecelmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelmenu.h; sourceTree = "<group>"; };
 		DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelmenu.m; sourceTree = "<group>"; };
 		DA8E65491C47F64C00BECAF6 /* mhomemenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomemenu.h; sourceTree = "<group>"; };
@@ -388,6 +400,7 @@
 			children = (
 				DA3F6E591C46EC18007E2888 /* c.h */,
 				DA3F6E561C46EC18007E2888 /* alert */,
+				DA4D56E31C4870D700C09C6F /* locations */,
 				DABD83931C46F8A4003C28D3 /* home */,
 				DA3F6E5A1C46EC18007E2888 /* main */,
 				DA8E65A71C485EBF00BECAF6 /* services */,
@@ -420,6 +433,7 @@
 				DA3F6E621C46EC18007E2888 /* m.h */,
 				DA8E65621C4808B200BECAF6 /* menu */,
 				DA8E659D1C484DD500BECAF6 /* about */,
+				DA4D56E51C4870F800C09C6F /* locations */,
 				DAA82FB41C47261900C40A7C /* home */,
 				DA8E65B21C4865B100BECAF6 /* services */,
 				DA3F6E5E1C46EC18007E2888 /* general */,
@@ -442,6 +456,7 @@
 				DABD83991C46FDF7003C28D3 /* home */,
 				DA3F6E641C46EC18007E2888 /* alert */,
 				DA8E65951C4849DC00BECAF6 /* about */,
+				DA4D56E41C4870E800C09C6F /* locations */,
 				DA3F6E671C46EC18007E2888 /* general */,
 				DA8E65AB1C48622400BECAF6 /* services */,
 				DA3F6E6E1C46EC18007E2888 /* main */,
@@ -476,6 +491,35 @@
 			children = (
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		DA4D56E31C4870D700C09C6F /* locations */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D56EC1C48713100C09C6F /* clocations.h */,
+				DA4D56ED1C48713100C09C6F /* clocations.m */,
+			);
+			path = locations;
+			sourceTree = "<group>";
+		};
+		DA4D56E41C4870E800C09C6F /* locations */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D56EF1C4871BC00C09C6F /* vlocations.h */,
+				DA4D56F01C4871BC00C09C6F /* vlocations.m */,
+			);
+			path = locations;
+			sourceTree = "<group>";
+		};
+		DA4D56E51C4870F800C09C6F /* locations */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D56E61C48710C00C09C6F /* mlocations.h */,
+				DA4D56E71C48710C00C09C6F /* mlocations.m */,
+				DA4D56E91C48711800C09C6F /* mlocationsitem.h */,
+				DA4D56EA1C48711800C09C6F /* mlocationsitem.m */,
+			);
+			path = locations;
 			sourceTree = "<group>";
 		};
 		DA8E65621C4808B200BECAF6 /* menu */ = {
@@ -761,9 +805,11 @@
 				DA8E65B11C48647400BECAF6 /* vservicescel.m in Sources */,
 				DA3F6E7C1C46EC18007E2888 /* vblur.m in Sources */,
 				DA3F6E721C46EC18007E2888 /* appdel.m in Sources */,
+				DA4D56EE1C48713100C09C6F /* clocations.m in Sources */,
 				DA8E656F1C4835FF00BECAF6 /* mmenucontact.m in Sources */,
 				DA8E65A61C48540100BECAF6 /* vaboutcel.m in Sources */,
 				DAA82FBB1C47289400C40A7C /* mhometitle.m in Sources */,
+				DA4D56F11C4871BC00C09C6F /* vlocations.m in Sources */,
 				DAA82FAA1C470F0D00C40A7C /* vlogo.m in Sources */,
 				DA3F6E781C46EC18007E2888 /* calert.m in Sources */,
 				DAA82FB31C47256D00C40A7C /* vhomecelbanner.m in Sources */,
@@ -775,6 +821,8 @@
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,
 				DA3F6E761C46EC18007E2888 /* tools.m in Sources */,
 				DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */,
+				DA4D56EB1C48711800C09C6F /* mlocationsitem.m in Sources */,
+				DA4D56E81C48710C00C09C6F /* mlocations.m in Sources */,
 				DA8E65A01C484DE300BECAF6 /* mabout.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
 				DA8E65AA1C485ED500BECAF6 /* cservices.m in Sources */,

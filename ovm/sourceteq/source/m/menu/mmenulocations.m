@@ -7,7 +7,7 @@
 
 -(Class)controller
 {
-    return [UIViewController class];
+    return [clocations class];
 }
 
 -(NSString*)title

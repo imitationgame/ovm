@@ -14,3 +14,5 @@
 #import "mabout.h"
 #import "maboutitem.h"
 #import "mservices.h"
+#import "mlocations.h"
+#import "mlocationsitem.h"

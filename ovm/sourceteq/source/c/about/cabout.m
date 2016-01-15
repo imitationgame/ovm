@@ -5,10 +5,15 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
     [self setTitle:NSLocalizedString(@"about_main_title", nil)];
     
     [[analytics singleton] trackscreen:ga_screen_about];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 -(void)loadView
