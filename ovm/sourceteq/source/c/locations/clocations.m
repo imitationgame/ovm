@@ -1,12 +1,20 @@
 #import "clocations.h"
 
 @implementation clocations
+{
+    MKCoordinateSpan mapspan;
+    CLLocationCoordinate2D userlocation;
+    NSInteger selected;
+    BOOL updateinitial;
+}
 
 -(void)viewDidLoad
 {
     [super viewDidLoad];
     [self setTitle:NSLocalizedString(@"locations_main_title", nil)];
     [[analytics singleton] trackscreen:ga_screen_locations];
+    
+    updateinitial = NO;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -36,18 +44,18 @@
             
         case kCLAuthorizationStatusNotDetermined:
             
-            locationmanager = [[CLLocationManager alloc] init];
-            [locationmanager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
-            [locationmanager setDistanceFilter:200];
-            [locationmanager setDelegate:self];
+            self.locationmanager = [[CLLocationManager alloc] init];
+            [self.locationmanager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
+            [self.locationmanager setDistanceFilter:80];
+            [self.locationmanager setDelegate:self];
             
-            if([locationmanager respondsToSelector:@selector(requestWhenInUseAuthorization)])
+            if([self.locationmanager respondsToSelector:@selector(requestWhenInUseAuthorization)])
             {
-                [locationmanager requestWhenInUseAuthorization];
+                [self.locationmanager requestWhenInUseAuthorization];
             }
             else
             {
-                [mapview setShowsUserLocation:YES];
+                [self.locations.mapview setShowsUserLocation:YES];
             }
             
             break;

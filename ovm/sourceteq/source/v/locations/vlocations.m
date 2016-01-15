@@ -10,4 +10,9 @@
     return self;
 }
 
+-(void)dealloc
+{
+    [self.mapview setShowsUserLocation:NO];
+}
+
 @end
