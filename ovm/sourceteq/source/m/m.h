@@ -18,3 +18,6 @@
 #import "mlocationsitem.h"
 #import "mcontact.h"
 #import "mcontactprotocol.h"
+#import "mcontactcall.h"
+#import "mcontactmail.h"
+#import "mcontactweb.h"

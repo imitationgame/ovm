@@ -32,6 +32,9 @@
 		DA4D57051C48759C00C09C6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4D57041C48759C00C09C6F /* MapKit.framework */; };
 		DA4D57081C487CAF00C09C6F /* vlocationscel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57071C487CAF00C09C6F /* vlocationscel.m */; };
 		DA4D570D1C48815900C09C6F /* locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4D570C1C48815900C09C6F /* locations.plist */; };
+		DA7550931C48969A00A682EB /* mcontactcall.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7550921C48969A00A682EB /* mcontactcall.m */; };
+		DA7550961C4896A600A682EB /* mcontactmail.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7550951C4896A600A682EB /* mcontactmail.m */; };
+		DA7550991C4896AE00A682EB /* mcontactweb.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7550981C4896AE00A682EB /* mcontactweb.m */; };
 		DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */; };
 		DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */; };
 		DA8E65561C47F94000BECAF6 /* flyer01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E654C1C47F94000BECAF6 /* flyer01.jpg */; };
@@ -150,6 +153,12 @@
 		DA4D57061C487CAF00C09C6F /* vlocationscel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlocationscel.h; sourceTree = "<group>"; };
 		DA4D57071C487CAF00C09C6F /* vlocationscel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlocationscel.m; sourceTree = "<group>"; };
 		DA4D570C1C48815900C09C6F /* locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locations.plist; sourceTree = "<group>"; };
+		DA7550911C48969A00A682EB /* mcontactcall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontactcall.h; sourceTree = "<group>"; };
+		DA7550921C48969A00A682EB /* mcontactcall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontactcall.m; sourceTree = "<group>"; };
+		DA7550941C4896A600A682EB /* mcontactmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontactmail.h; sourceTree = "<group>"; };
+		DA7550951C4896A600A682EB /* mcontactmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontactmail.m; sourceTree = "<group>"; };
+		DA7550971C4896AE00A682EB /* mcontactweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontactweb.h; sourceTree = "<group>"; };
+		DA7550981C4896AE00A682EB /* mcontactweb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontactweb.m; sourceTree = "<group>"; };
 		DA8E65461C47F4F600BECAF6 /* vhomecelmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelmenu.h; sourceTree = "<group>"; };
 		DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelmenu.m; sourceTree = "<group>"; };
 		DA8E65491C47F64C00BECAF6 /* mhomemenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomemenu.h; sourceTree = "<group>"; };
@@ -565,6 +574,12 @@
 				DA4D56F71C4873B500C09C6F /* mcontact.h */,
 				DA4D56F81C4873B500C09C6F /* mcontact.m */,
 				DA0FB4951C489320003DB358 /* mcontactprotocol.h */,
+				DA7550911C48969A00A682EB /* mcontactcall.h */,
+				DA7550921C48969A00A682EB /* mcontactcall.m */,
+				DA7550941C4896A600A682EB /* mcontactmail.h */,
+				DA7550951C4896A600A682EB /* mcontactmail.m */,
+				DA7550971C4896AE00A682EB /* mcontactweb.h */,
+				DA7550981C4896AE00A682EB /* mcontactweb.m */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -864,6 +879,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA82FB71C47262C00C40A7C /* mhome.m in Sources */,
+				DA7550931C48969A00A682EB /* mcontactcall.m in Sources */,
 				DA3F6E741C46EC18007E2888 /* main.m in Sources */,
 				DA8E65751C4837E000BECAF6 /* vhomecelmenucel.m in Sources */,
 				DA8E65B11C48647400BECAF6 /* vservicescel.m in Sources */,
@@ -891,6 +907,7 @@
 				DA8E65A01C484DE300BECAF6 /* mabout.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
 				DA8E65AA1C485ED500BECAF6 /* cservices.m in Sources */,
+				DA7550991C4896AE00A682EB /* mcontactweb.m in Sources */,
 				DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */,
 				DA4D57031C4873F000C09C6F /* vcontactcel.m in Sources */,
 				DA8E65981C4849E900BECAF6 /* vabout.m in Sources */,
@@ -899,6 +916,7 @@
 				DA8E65651C48316100BECAF6 /* mmenu.m in Sources */,
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
 				DA8E65721C48360900BECAF6 /* mmenuservices.m in Sources */,
+				DA7550961C4896A600A682EB /* mcontactmail.m in Sources */,
 				DAA82FBE1C47289C00C40A7C /* mhomebanners.m in Sources */,
 				DA8E65AE1C48623200BECAF6 /* vservices.m in Sources */,
 				DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */,
