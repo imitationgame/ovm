@@ -29,13 +29,41 @@
     [mapview setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     self.mapview = mapview;
-    [self addSubview:mapview];
     
-    NSDictionary *views = @{@"map":mapview};
-    NSDictionary *metrics = @{};
+    CGFloat itemwidth = 50;
+    CGFloat itemheight = 50;
+    
+    UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setHeaderReferenceSize:CGSizeZero];
+    [flow setFooterReferenceSize:CGSizeZero];
+    [flow setItemSize:CGSizeMake(itemwidth, itemheight)];
+    [flow setMinimumInteritemSpacing:0];
+    [flow setMinimumLineSpacing:0];
+    [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [flow setSectionInset:UIEdgeInsetsZero];
+    
+    UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
+    [collection setBackgroundColor:[UIColor clearColor]];
+    [collection setScrollEnabled:NO];
+    [collection setBounces:NO];
+    [collection setClipsToBounds:YES];
+    [collection setDataSource:self];
+    [collection setDelegate:self];
+    [collection registerClass:[vlocationscel class] forCellWithReuseIdentifier:celid];
+    [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    self.collection = collection;
+    
+    [self addSubview:mapview];
+    [self addSubview:collection];
+    
+    NSDictionary *views = @{@"map":mapview, @"col":collection};
+    NSDictionary *metrics = @{@"colwidth":@(itemwidth), @"colheight":@(itemheight * ([self.locations count] + 1))};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[col(colwidth)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-30-[col(colheight)]" options:0 metrics:metrics views:views]];
 }
 
 #pragma mark -
