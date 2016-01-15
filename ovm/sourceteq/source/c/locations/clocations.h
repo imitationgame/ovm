@@ -4,6 +4,8 @@
 
 @interface clocations:UIViewController<MKMapViewDelegate, CLLocationManagerDelegate>
 
+-(void)centeruser;
+
 @property(weak, nonatomic)vlocations *locations;
 @property(strong, nonatomic)CLLocationManager *locationmanager;
 @property(nonatomic)MKCoordinateSpan mapspan;

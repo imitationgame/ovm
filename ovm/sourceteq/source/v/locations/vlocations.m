@@ -2,10 +2,12 @@
 
 @implementation vlocations
 
--(instancetype)init
+-(instancetype)init:(clocations*)controller
 {
     self = [super init];
     [self setBackgroundColor:[UIColor whiteColor]];
+    
+    self.controller = controller;
     
     MKMapView *mapview = [[MKMapView alloc] init];
     [mapview setRotateEnabled:NO];
@@ -21,7 +23,6 @@
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
-    
     
     return self;
 }

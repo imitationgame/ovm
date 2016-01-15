@@ -21,9 +21,15 @@
     [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self locationscheck];
+}
+
 -(void)loadView
 {
-    self.view = [[vlocations alloc] init];
+    self.view = [[vlocations alloc] init:self];
     self.locations = (vlocations*)self.view;
     [self.locations.mapview setDelegate:self];
 }
@@ -63,6 +69,37 @@
             break;
         case kCLAuthorizationStatusRestricted:
             break;
+    }
+}
+
+#pragma mark public
+
+-(void)centeruser
+{
+    [self.locations.mapview setRegion:MKCoordinateRegionMake(self.userlocation, self.mapspan) animated:YES];
+}
+
+#pragma -
+#pragma mark map delegate
+
+-(void)mapView:(MKMapView*)mapview didUpdateUserLocation:(MKUserLocation*)userlocation
+{
+    self.userlocation = userlocation.coordinate;
+    
+    if(!updateinitial)
+    {
+        updateinitial = YES;
+        
+        [self centeruser];
+//        [mapmenu showuser];
+    }
+}
+
+-(void)locationManager:(CLLocationManager*)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if(status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse)
+    {
+        [self.locations.mapview setShowsUserLocation:YES];
     }
 }
 
