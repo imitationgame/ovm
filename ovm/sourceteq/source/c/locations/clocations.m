@@ -12,7 +12,7 @@
     [[analytics singleton] trackscreen:ga_screen_locations];
     
     updateinitial = NO;
-    self.mapspan = MKCoordinateSpanMake(0.015, 0.015);
+    self.mapspan = MKCoordinateSpanMake(0.2, 0.2);
 }
 
 -(void)viewWillAppear:(BOOL)animated
