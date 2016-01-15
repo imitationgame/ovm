@@ -1,13 +1,12 @@
-//
-//  mlocationsitem.h
-//  ovm
-//
-//  Created by zero on 1/14/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
+@interface mlocationsitem:NSObject
 
-@interface mlocationsitem : NSObject
+-(instancetype)init:(NSString*)title symbol:(NSString*)symbol lat:(NSNumber*)lat lon:(NSNumber*)lon;
+
+@property(copy, nonatomic)NSString *title;
+@property(copy, nonatomic)NSString *symbol;
+@property(nonatomic)double latitude;
+@property(nonatomic)double longitude;
 
 @end
