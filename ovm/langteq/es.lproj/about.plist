@@ -2,35 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-    <dict>
-        <key>title</key>
-        <string>Oficinas Virtuales México</string>
-        <key>descr</key>
-        <string>Nuestro objetivo es impulsar a profesionistas independientes, pymes, empresas y corporativos, dándoles imagen, formalidad, ubicación, seguridad y respaldo, con servicios altamente rentables</string>
-    </dict>
+	<dict>
+		<key>title</key>
+		<string>Oficinas Virtuales México</string>
+		<key>descr</key>
+		<string>Nuestro objetivo es impulsar a profesionistas independientes, pymes, empresas y corporativos, dándoles imagen, formalidad, ubicación, seguridad y respaldo, con servicios altamente rentables</string>
+	</dict>
 	<dict>
 		<key>title</key>
 		<string>Sin señalizacion interna</string>
 		<key>descr</key>
 		<string>Nuestra imagen corporativa no es usada dentro de las instalaciones para brindar mayor discreción</string>
 	</dict>
-    <dict>
-        <key>title</key>
-        <string>10 años de experiencia</string>
-        <key>descr</key>
-        <string>Gracias a la cual ampliamos, amparamos y respaldamos su negocio con nuestros servicios</string>
-    </dict>
-    <dict>
-        <key>title</key>
-        <string>Capacidad</string>
-        <key>descr</key>
-        <string>Podemos atender tus eventos especiales, tenemos lugar para todos y con ambientes diferentes, los 365 dias del año</string>
-    </dict>
-    <dict>
-        <key>title</key>
-        <string>Tecnologia</string>
-        <key>descr</key>
-        <string>Fibra optica, equipo para proyeccion, impresoras, equipo de video conferencias, nuestras instalaciones estan completamente equipadas para tus necesidades</string>
-    </dict>
+	<dict>
+		<key>title</key>
+		<string>10 años de experiencia</string>
+		<key>descr</key>
+		<string>Gracias a la cual ampliamos, amparamos y respaldamos su negocio con nuestros servicios</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Capacidad</string>
+		<key>descr</key>
+		<string>Podemos atender tus eventos especiales, tenemos lugar para todos y con ambientes diferentes, los 365 dias del año</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Tecnología</string>
+		<key>descr</key>
+		<string>Fibra optica, equipo para proyeccion, impresoras, equipo de video conferencias, nuestras instalaciones estan completamente equipadas para tus necesidades</string>
+	</dict>
 </array>
 </plist>
