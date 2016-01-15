@@ -30,8 +30,8 @@
     
     self.mapview = mapview;
     
-    CGFloat itemwidth = 50;
-    CGFloat itemheight = 50;
+    CGFloat itemwidth = 54;
+    CGFloat itemheight = 44;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setHeaderReferenceSize:CGSizeZero];
@@ -58,12 +58,12 @@
     [self addSubview:collection];
     
     NSDictionary *views = @{@"map":mapview, @"col":collection};
-    NSDictionary *metrics = @{@"colwidth":@(itemwidth), @"colheight":@(itemheight * ([self.locations count] + 1))};
+    NSDictionary *metrics = @{@"colwidth":@(itemwidth), @"colheight":@(itemheight * ([self.locations count] + 0))};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[col(colwidth)]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-30-[col(colheight)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[col(colwidth)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[col(colheight)]" options:0 metrics:metrics views:views]];
 }
 
 #pragma mark -

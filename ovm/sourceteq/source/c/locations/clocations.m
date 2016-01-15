@@ -32,6 +32,15 @@
     }
     
     [self locationscheck];
+    
+    [self.navigationController.interactivePopGestureRecognizer setEnabled:NO];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController.interactivePopGestureRecognizer setEnabled:YES];
 }
 
 -(void)loadView
