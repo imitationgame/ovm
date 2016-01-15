@@ -12,7 +12,7 @@
 
 -(void)selected
 {
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ovmx.org"]];
 }
 
 @end

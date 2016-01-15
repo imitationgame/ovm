@@ -12,7 +12,7 @@
 
 -(void)selected
 {
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:contact@ovmx.org"]];
 }
 
 @end
