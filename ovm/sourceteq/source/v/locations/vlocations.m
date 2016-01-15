@@ -48,13 +48,13 @@
 
 -(NSInteger)collectionView:(UICollectionView*)col numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.locations count];
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
     vlocationscel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
-//    [cel config:];
+    [cel config:[self.locations item:index.item]];
     
     return cel;
 }

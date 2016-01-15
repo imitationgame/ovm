@@ -61,7 +61,10 @@
 
 -(void)config:(mlocationsitem*)item
 {
+    self.item = item;
+    [self.lbl setText:item.symbol];
     
+    [self hover];
 }
 
 @end
