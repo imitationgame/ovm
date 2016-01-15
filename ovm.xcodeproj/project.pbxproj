@@ -27,7 +27,6 @@
 		DA4D56F11C4871BC00C09C6F /* vlocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F01C4871BC00C09C6F /* vlocations.m */; };
 		DA4D56F51C48730900C09C6F /* ccontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F41C48730900C09C6F /* ccontact.m */; };
 		DA4D56F91C4873B500C09C6F /* mcontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F81C4873B500C09C6F /* mcontact.m */; };
-		DA4D56FC1C4873CA00C09C6F /* mcontactitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56FB1C4873CA00C09C6F /* mcontactitem.m */; };
 		DA4D57001C4873E600C09C6F /* vcontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56FF1C4873E600C09C6F /* vcontact.m */; };
 		DA4D57031C4873F000C09C6F /* vcontactcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57021C4873F000C09C6F /* vcontactcel.m */; };
 		DA4D57051C48759C00C09C6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4D57041C48759C00C09C6F /* MapKit.framework */; };
@@ -95,6 +94,7 @@
 /* Begin PBXFileReference section */
 		622C6F0CE626AB28520DFD6D /* Pods-ovm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ovm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ovm/Pods-ovm.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8E63BDF842FD31C3C35D16 /* libPods-ovm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ovm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0FB4951C489320003DB358 /* mcontactprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontactprotocol.h; sourceTree = "<group>"; };
 		DA3F6E1F1C46EA7B007E2888 /* ovm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ovm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3F6E3D1C46EC18007E2888 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
 		DA3F6E3F1C46EC18007E2888 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -142,8 +142,6 @@
 		DA4D56F41C48730900C09C6F /* ccontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccontact.m; sourceTree = "<group>"; };
 		DA4D56F71C4873B500C09C6F /* mcontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontact.h; sourceTree = "<group>"; };
 		DA4D56F81C4873B500C09C6F /* mcontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontact.m; sourceTree = "<group>"; };
-		DA4D56FA1C4873CA00C09C6F /* mcontactitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontactitem.h; sourceTree = "<group>"; };
-		DA4D56FB1C4873CA00C09C6F /* mcontactitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontactitem.m; sourceTree = "<group>"; };
 		DA4D56FE1C4873E600C09C6F /* vcontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcontact.h; sourceTree = "<group>"; };
 		DA4D56FF1C4873E600C09C6F /* vcontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcontact.m; sourceTree = "<group>"; };
 		DA4D57011C4873F000C09C6F /* vcontactcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcontactcel.h; sourceTree = "<group>"; };
@@ -566,8 +564,7 @@
 			children = (
 				DA4D56F71C4873B500C09C6F /* mcontact.h */,
 				DA4D56F81C4873B500C09C6F /* mcontact.m */,
-				DA4D56FA1C4873CA00C09C6F /* mcontactitem.h */,
-				DA4D56FB1C4873CA00C09C6F /* mcontactitem.m */,
+				DA0FB4951C489320003DB358 /* mcontactprotocol.h */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -883,7 +880,6 @@
 				DA8E65691C48332A00BECAF6 /* mmenulocations.m in Sources */,
 				DA3F6E751C46EC18007E2888 /* analytics.m in Sources */,
 				DA3F6E791C46EC18007E2888 /* cmain.m in Sources */,
-				DA4D56FC1C4873CA00C09C6F /* mcontactitem.m in Sources */,
 				DA8E65901C48458B00BECAF6 /* mhomespace.m in Sources */,
 				DABD83961C46F8B4003C28D3 /* chome.m in Sources */,
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,

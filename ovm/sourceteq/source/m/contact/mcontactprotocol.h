@@ -1,5 +1,5 @@
 //
-//  mcontactitem.h
+//  mcontactprotocol.h
 //  ovm
 //
 //  Created by zero on 1/14/16.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface mcontactitem : NSObject
+@protocol mcontactprotocol <NSObject>
 
 @end
