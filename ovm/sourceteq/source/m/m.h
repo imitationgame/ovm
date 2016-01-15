@@ -16,3 +16,5 @@
 #import "mservices.h"
 #import "mlocations.h"
 #import "mlocationsitem.h"
+#import "mcontact.h"
+#import "mcontactitem.h"

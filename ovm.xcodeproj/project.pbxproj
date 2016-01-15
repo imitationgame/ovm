@@ -26,6 +26,10 @@
 		DA4D56EE1C48713100C09C6F /* clocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56ED1C48713100C09C6F /* clocations.m */; };
 		DA4D56F11C4871BC00C09C6F /* vlocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F01C4871BC00C09C6F /* vlocations.m */; };
 		DA4D56F51C48730900C09C6F /* ccontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F41C48730900C09C6F /* ccontact.m */; };
+		DA4D56F91C4873B500C09C6F /* mcontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F81C4873B500C09C6F /* mcontact.m */; };
+		DA4D56FC1C4873CA00C09C6F /* mcontactitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56FB1C4873CA00C09C6F /* mcontactitem.m */; };
+		DA4D57001C4873E600C09C6F /* vcontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56FF1C4873E600C09C6F /* vcontact.m */; };
+		DA4D57031C4873F000C09C6F /* vcontactcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57021C4873F000C09C6F /* vcontactcel.m */; };
 		DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */; };
 		DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */; };
 		DA8E65561C47F94000BECAF6 /* flyer01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E654C1C47F94000BECAF6 /* flyer01.jpg */; };
@@ -133,6 +137,14 @@
 		DA4D56F01C4871BC00C09C6F /* vlocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlocations.m; sourceTree = "<group>"; };
 		DA4D56F31C48730900C09C6F /* ccontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccontact.h; sourceTree = "<group>"; };
 		DA4D56F41C48730900C09C6F /* ccontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccontact.m; sourceTree = "<group>"; };
+		DA4D56F71C4873B500C09C6F /* mcontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontact.h; sourceTree = "<group>"; };
+		DA4D56F81C4873B500C09C6F /* mcontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontact.m; sourceTree = "<group>"; };
+		DA4D56FA1C4873CA00C09C6F /* mcontactitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcontactitem.h; sourceTree = "<group>"; };
+		DA4D56FB1C4873CA00C09C6F /* mcontactitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcontactitem.m; sourceTree = "<group>"; };
+		DA4D56FE1C4873E600C09C6F /* vcontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcontact.h; sourceTree = "<group>"; };
+		DA4D56FF1C4873E600C09C6F /* vcontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcontact.m; sourceTree = "<group>"; };
+		DA4D57011C4873F000C09C6F /* vcontactcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcontactcel.h; sourceTree = "<group>"; };
+		DA4D57021C4873F000C09C6F /* vcontactcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcontactcel.m; sourceTree = "<group>"; };
 		DA8E65461C47F4F600BECAF6 /* vhomecelmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelmenu.h; sourceTree = "<group>"; };
 		DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelmenu.m; sourceTree = "<group>"; };
 		DA8E65491C47F64C00BECAF6 /* mhomemenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomemenu.h; sourceTree = "<group>"; };
@@ -437,6 +449,7 @@
 				DA3F6E621C46EC18007E2888 /* m.h */,
 				DA8E65621C4808B200BECAF6 /* menu */,
 				DA8E659D1C484DD500BECAF6 /* about */,
+				DA4D56F61C48737400C09C6F /* contact */,
 				DA4D56E51C4870F800C09C6F /* locations */,
 				DAA82FB41C47261900C40A7C /* home */,
 				DA8E65B21C4865B100BECAF6 /* services */,
@@ -460,6 +473,7 @@
 				DABD83991C46FDF7003C28D3 /* home */,
 				DA3F6E641C46EC18007E2888 /* alert */,
 				DA8E65951C4849DC00BECAF6 /* about */,
+				DA4D56FD1C4873DA00C09C6F /* contact */,
 				DA4D56E41C4870E800C09C6F /* locations */,
 				DA3F6E671C46EC18007E2888 /* general */,
 				DA8E65AB1C48622400BECAF6 /* services */,
@@ -531,6 +545,28 @@
 			children = (
 				DA4D56F31C48730900C09C6F /* ccontact.h */,
 				DA4D56F41C48730900C09C6F /* ccontact.m */,
+			);
+			path = contact;
+			sourceTree = "<group>";
+		};
+		DA4D56F61C48737400C09C6F /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D56F71C4873B500C09C6F /* mcontact.h */,
+				DA4D56F81C4873B500C09C6F /* mcontact.m */,
+				DA4D56FA1C4873CA00C09C6F /* mcontactitem.h */,
+				DA4D56FB1C4873CA00C09C6F /* mcontactitem.m */,
+			);
+			path = contact;
+			sourceTree = "<group>";
+		};
+		DA4D56FD1C4873DA00C09C6F /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D56FE1C4873E600C09C6F /* vcontact.h */,
+				DA4D56FF1C4873E600C09C6F /* vcontact.m */,
+				DA4D57011C4873F000C09C6F /* vcontactcel.h */,
+				DA4D57021C4873F000C09C6F /* vcontactcel.m */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -829,17 +865,20 @@
 				DA8E65691C48332A00BECAF6 /* mmenulocations.m in Sources */,
 				DA3F6E751C46EC18007E2888 /* analytics.m in Sources */,
 				DA3F6E791C46EC18007E2888 /* cmain.m in Sources */,
+				DA4D56FC1C4873CA00C09C6F /* mcontactitem.m in Sources */,
 				DA8E65901C48458B00BECAF6 /* mhomespace.m in Sources */,
 				DABD83961C46F8B4003C28D3 /* chome.m in Sources */,
 				DA3F6E7B1C46EC18007E2888 /* valert.m in Sources */,
 				DA3F6E761C46EC18007E2888 /* tools.m in Sources */,
 				DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */,
+				DA4D56F91C4873B500C09C6F /* mcontact.m in Sources */,
 				DA4D56EB1C48711800C09C6F /* mlocationsitem.m in Sources */,
 				DA4D56E81C48710C00C09C6F /* mlocations.m in Sources */,
 				DA8E65A01C484DE300BECAF6 /* mabout.m in Sources */,
 				DA3F6E7D1C46EC18007E2888 /* viewbase.m in Sources */,
 				DA8E65AA1C485ED500BECAF6 /* cservices.m in Sources */,
 				DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */,
+				DA4D57031C4873F000C09C6F /* vcontactcel.m in Sources */,
 				DA8E65981C4849E900BECAF6 /* vabout.m in Sources */,
 				DA8E65B51C4865C100BECAF6 /* mservices.m in Sources */,
 				DA4D56F51C48730900C09C6F /* ccontact.m in Sources */,
@@ -851,6 +890,7 @@
 				DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */,
 				DA8E65941C4848FA00BECAF6 /* cabout.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
+				DA4D57001C4873E600C09C6F /* vcontact.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
 				DA8E65A31C48508E00BECAF6 /* maboutitem.m in Sources */,
 				DAA82FAD1C4721D100C40A7C /* vhomeceltitle.m in Sources */,
