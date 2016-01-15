@@ -12,7 +12,7 @@
     [[analytics singleton] trackscreen:ga_screen_locations];
     
     updateinitial = NO;
-    self.mapspan = MKCoordinateSpanMake(0.2, 0.2);
+    self.mapspan = MKCoordinateSpanMake(0.3, 0.3);
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -24,19 +24,20 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self locationscheck];
     
     if(!self.locations.controller)
     {
         [self.locations load:self];
+        [self.locations.mapview setDelegate:self];
     }
+    
+    [self locationscheck];
 }
 
 -(void)loadView
 {
     self.view = [[vlocations alloc] init];
     self.locations = (vlocations*)self.view;
-    [self.locations.mapview setDelegate:self];
 }
 
 #pragma mark functionality

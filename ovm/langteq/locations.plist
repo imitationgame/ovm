@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>title</key>
+            <string>Roma</string>
+            <key>symbol</key>
+            <string>R</string>
+            <key>latitude</key>
+            <real>19.360287</real>
+            <key>longitude</key>
+            <real>-99.163357</real>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Narvarte</string>
+            <key>symbol</key>
+            <string>N</string>
+            <key>latitude</key>
+            <real>19.349106</real>
+            <key>longitude</key>
+            <real>-99.163222</real>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Letran Valle</string>
+            <key>symbol</key>
+            <string>L</string>
+            <key>latitude</key>
+            <real>19.373815</real>
+            <key>longitude</key>
+            <real>-99.157522</real>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Del Valle</string>
+            <key>symbol</key>
+            <string>D</string>
+            <key>latitude</key>
+            <real>19.373815</real>
+            <key>longitude</key>
+            <real>-99.157522</real>
+        </dict>
+    </array>
+</plist>

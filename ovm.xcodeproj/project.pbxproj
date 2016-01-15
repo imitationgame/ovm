@@ -32,6 +32,7 @@
 		DA4D57031C4873F000C09C6F /* vcontactcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57021C4873F000C09C6F /* vcontactcel.m */; };
 		DA4D57051C48759C00C09C6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4D57041C48759C00C09C6F /* MapKit.framework */; };
 		DA4D57081C487CAF00C09C6F /* vlocationscel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57071C487CAF00C09C6F /* vlocationscel.m */; };
+		DA4D570D1C48815900C09C6F /* locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4D570C1C48815900C09C6F /* locations.plist */; };
 		DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */; };
 		DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */; };
 		DA8E65561C47F94000BECAF6 /* flyer01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E654C1C47F94000BECAF6 /* flyer01.jpg */; };
@@ -150,6 +151,7 @@
 		DA4D57041C48759C00C09C6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA4D57061C487CAF00C09C6F /* vlocationscel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlocationscel.h; sourceTree = "<group>"; };
 		DA4D57071C487CAF00C09C6F /* vlocationscel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlocationscel.m; sourceTree = "<group>"; };
+		DA4D570C1C48815900C09C6F /* locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locations.plist; sourceTree = "<group>"; };
 		DA8E65461C47F4F600BECAF6 /* vhomecelmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelmenu.h; sourceTree = "<group>"; };
 		DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelmenu.m; sourceTree = "<group>"; };
 		DA8E65491C47F64C00BECAF6 /* mhomemenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomemenu.h; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 		DA3F6E3C1C46EC18007E2888 /* langteq */ = {
 			isa = PBXGroup;
 			children = (
+				DA4D570C1C48815900C09C6F /* locations.plist */,
 				DA8E65991C484B3400BECAF6 /* about.plist */,
 				DA3F6E3D1C46EC18007E2888 /* defs.plist */,
 				DABD83971C46F950003C28D3 /* analytics.plist */,
@@ -776,6 +779,7 @@
 				DA8E658D1C4843FD00BECAF6 /* phone@3x.png in Resources */,
 				DABD83A71C4707A0003C28D3 /* in in Resources */,
 				DA8E65861C48439C00BECAF6 /* services@2x.png in Resources */,
+				DA4D570D1C48815900C09C6F /* locations.plist in Resources */,
 				DA8E657F1C48413700BECAF6 /* location.png in Resources */,
 				DA8E655E1C47F94000BECAF6 /* flyer05.jpg in Resources */,
 				DA8E65581C47F94000BECAF6 /* flyer02.jpg in Resources */,
