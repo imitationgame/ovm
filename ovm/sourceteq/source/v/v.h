@@ -13,5 +13,7 @@
 #import "vservices.h"
 #import "vservicescel.h"
 #import "vlocations.h"
+#import "vlocationsheader.h"
+#import "vlocationscel.h"
 #import "vcontact.h"
 #import "vcontactcel.h"

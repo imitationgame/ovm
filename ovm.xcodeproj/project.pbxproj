@@ -31,6 +31,7 @@
 		DA4D57001C4873E600C09C6F /* vcontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56FF1C4873E600C09C6F /* vcontact.m */; };
 		DA4D57031C4873F000C09C6F /* vcontactcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57021C4873F000C09C6F /* vcontactcel.m */; };
 		DA4D57051C48759C00C09C6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4D57041C48759C00C09C6F /* MapKit.framework */; };
+		DA4D57081C487CAF00C09C6F /* vlocationscel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D57071C487CAF00C09C6F /* vlocationscel.m */; };
 		DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */; };
 		DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */; };
 		DA8E65561C47F94000BECAF6 /* flyer01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E654C1C47F94000BECAF6 /* flyer01.jpg */; };
@@ -147,6 +148,8 @@
 		DA4D57011C4873F000C09C6F /* vcontactcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcontactcel.h; sourceTree = "<group>"; };
 		DA4D57021C4873F000C09C6F /* vcontactcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcontactcel.m; sourceTree = "<group>"; };
 		DA4D57041C48759C00C09C6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA4D57061C487CAF00C09C6F /* vlocationscel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlocationscel.h; sourceTree = "<group>"; };
+		DA4D57071C487CAF00C09C6F /* vlocationscel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlocationscel.m; sourceTree = "<group>"; };
 		DA8E65461C47F4F600BECAF6 /* vhomecelmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelmenu.h; sourceTree = "<group>"; };
 		DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelmenu.m; sourceTree = "<group>"; };
 		DA8E65491C47F64C00BECAF6 /* mhomemenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomemenu.h; sourceTree = "<group>"; };
@@ -529,6 +532,8 @@
 			children = (
 				DA4D56EF1C4871BC00C09C6F /* vlocations.h */,
 				DA4D56F01C4871BC00C09C6F /* vlocations.m */,
+				DA4D57061C487CAF00C09C6F /* vlocationscel.h */,
+				DA4D57071C487CAF00C09C6F /* vlocationscel.m */,
 			);
 			path = locations;
 			sourceTree = "<group>";
@@ -898,6 +903,7 @@
 				DA8E65AE1C48623200BECAF6 /* vservices.m in Sources */,
 				DA8E656C1C4834F200BECAF6 /* mmenuabout.m in Sources */,
 				DA8E65941C4848FA00BECAF6 /* cabout.m in Sources */,
+				DA4D57081C487CAF00C09C6F /* vlocationscel.m in Sources */,
 				DA3F6E7E1C46EC18007E2888 /* vspinner.m in Sources */,
 				DA4D57001C4873E600C09C6F /* vcontact.m in Sources */,
 				DA3F6E771C46EC18007E2888 /* updater.m in Sources */,
