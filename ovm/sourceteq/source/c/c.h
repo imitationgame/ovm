@@ -4,3 +4,4 @@
 #import "cservices.h"
 #import "cabout.h"
 #import "clocations.h"
+#import "ccontact.h"

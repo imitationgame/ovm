@@ -7,7 +7,7 @@
 
 -(Class)controller
 {
-    return [UIViewController class];
+    return [ccontact class];
 }
 
 -(NSString*)title
