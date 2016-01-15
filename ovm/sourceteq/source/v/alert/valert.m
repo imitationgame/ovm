@@ -12,8 +12,8 @@
     [lbl setBackgroundColor:[UIColor clearColor]];
     [lbl setTextAlignment:NSTextAlignmentCenter];
     [lbl setNumberOfLines:0];
-    [lbl setFont:[UIFont fontWithName:fontname size:22]];
-    [lbl setTextColor:[UIColor colorWithWhite:0 alpha:0.9]];
+    [lbl setFont:[UIFont fontWithName:fontboldname size:22]];
+    [lbl setTextColor:[UIColor blackColor]];
     [lbl setUserInteractionEnabled:NO];
     [lbl setText:controller.message];
     [lbl setTranslatesAutoresizingMaskIntoConstraints:NO];

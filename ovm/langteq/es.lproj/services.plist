@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Domicilio seguro</string>
+    <string>Sala de juntas</string>
+    <string>Oficina virtual</string>
+    <string>Oficina</string>
+    <string>Domicilio fiscal</string>
+    <string>Domicilio comercial</string>
+    <string>Servicio secretarial</string>
+    <string>Servicio secretarial personalizado</string>
+    <string>Mensajería</string>
+    <string>Atención telefónica</string>
+    <string>Línea telefónica personalizada</string>
+    <string>Recepción de correspondencia</string>
+    <string>Publicidad</string>
+    <string>Publicidad digital</string>
+    <string>Desarrollo web</string>
+    <string>Cocina</string>
+    <string>Comedor</string>
+    <string>Recepción</string>
+    <string>Sala de espera</string>
+    <string>Areas verdes</string>
+    <string>Coffee break</string>
+    <string>Tocadores</string>
+    <string>Mantenimiento</string>
+</array>
+</plist>
+

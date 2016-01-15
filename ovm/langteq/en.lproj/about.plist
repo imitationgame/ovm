@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>title</key>
+        <string>Oficinas Virtuales Mexico</string>
+        <key>descr</key>
+        <string>We strive to empower freelance professionals, merchants, small and big companies and even corporations with their own branding, asssuring formality, facilities, security and support, everything a the smallest prices in the market</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>No branding</string>
+        <key>descr</key>
+        <string>Our brand is never displayed in the facilities</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>10 years in the businnes</string>
+        <key>descr</key>
+        <string>With that much experience we can ensure our services for your company</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>Capacity</string>
+        <key>descr</key>
+        <string>We can host your special events, there is room for everyone and with different settings, 24/7</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>IT</string>
+        <key>descr</key>
+        <string>Fiber optics, screen projection, printers, virtual conference equipment, our facilities are fully suited for your needs</string>
+    </dict>
+</array>
+</plist>

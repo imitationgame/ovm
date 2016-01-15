@@ -3,12 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>appid</key>
-	<string>1072431086</string>
+	<string>1074414534</string>
 	<key>version</key>
 	<integer>10</integer>
-	<key>dbfolder</key>
-	<string>sqlite</string>
-	<key>dbname</key>
-	<string>gattaca.db</string>
 </dict>
 </plist>

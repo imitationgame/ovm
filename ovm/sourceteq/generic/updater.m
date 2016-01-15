@@ -6,13 +6,8 @@ NSString *documents;
 
 +(void)launch
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
-                   ^(void)
-                   {
-                       [updater update];
-                       [[analytics singleton] start];
-                       [[NSNotificationCenter defaultCenter] postNotificationName:notloadfinish object:nil];
-                   });
+    [updater update];
+    [[analytics singleton] start];
 }
 
 #pragma mark private
@@ -33,11 +28,7 @@ NSString *documents;
         {
             [updater firsttime:defaults];
         }
-        
-        [mdb updatedb];
     }
-    
-    dbname = [documents stringByAppendingPathComponent:[properties valueForKey:@"dbname"]];
 }
 
 +(void)firsttime:(NSDictionary*)plist

@@ -13,8 +13,7 @@
 
 -(instancetype)init
 {
-    self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    [self setViewControllers:@[[[cloading alloc] init]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    self = [super initWithRootViewController:[[chome alloc] init]];
     
     return self;
 }
@@ -23,9 +22,9 @@
 {
     [super viewDidLoad];
     
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontname size:16]} forState:UIControlStateNormal];
-    
-    [vmenu addto:self.view];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontname size:17]} forState:UIControlStateNormal];
+    [self.navigationBar setTintColor:colormain];
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontboldname size:18], NSForegroundColorAttributeName:[UIColor blackColor]}];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle
@@ -40,40 +39,8 @@
 
 #pragma mark functionality
 
--(void)safeopensection:(id<msectionprotocol>)section animated:(BOOL)animated
-{
-    UIPageViewControllerNavigationDirection direction = UIPageViewControllerNavigationDirectionForward;
-    UIViewController *controller = [section controller];
-    
-    if([section section] < [self.section section])
-    {
-        direction = UIPageViewControllerNavigationDirectionReverse;
-    }
-    
-    self.section = section;
-    [self setViewControllers:@[controller] direction:direction animated:animated completion:nil];
-}
 
 #pragma mark public
 
--(void)openinitial
-{
-    [[cmain singleton] opensection:[msection browse] animated:NO];
-    
-    if(![mmyprofile singleton].profile.age)
-    {
-        [cprofileage askage];
-    }
-}
-
--(void)opensection:(id<msectionprotocol>)section animated:(BOOL)animated
-{
-    dispatch_async(dispatch_get_main_queue(),
-                   ^(void)
-                   {
-                       [self safeopensection:section animated:animated];
-                       [[NSNotificationCenter defaultCenter] postNotificationName:notmenuchanged object:nil];
-                   });
-}
 
 @end
