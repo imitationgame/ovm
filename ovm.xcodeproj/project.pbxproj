@@ -25,6 +25,7 @@
 		DA4D56EB1C48711800C09C6F /* mlocationsitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56EA1C48711800C09C6F /* mlocationsitem.m */; };
 		DA4D56EE1C48713100C09C6F /* clocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56ED1C48713100C09C6F /* clocations.m */; };
 		DA4D56F11C4871BC00C09C6F /* vlocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F01C4871BC00C09C6F /* vlocations.m */; };
+		DA4D56F51C48730900C09C6F /* ccontact.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D56F41C48730900C09C6F /* ccontact.m */; };
 		DA8E65481C47F4F600BECAF6 /* vhomecelmenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */; };
 		DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E654A1C47F64C00BECAF6 /* mhomemenu.m */; };
 		DA8E65561C47F94000BECAF6 /* flyer01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA8E654C1C47F94000BECAF6 /* flyer01.jpg */; };
@@ -130,6 +131,8 @@
 		DA4D56ED1C48713100C09C6F /* clocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clocations.m; sourceTree = "<group>"; };
 		DA4D56EF1C4871BC00C09C6F /* vlocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlocations.h; sourceTree = "<group>"; };
 		DA4D56F01C4871BC00C09C6F /* vlocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vlocations.m; sourceTree = "<group>"; };
+		DA4D56F31C48730900C09C6F /* ccontact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccontact.h; sourceTree = "<group>"; };
+		DA4D56F41C48730900C09C6F /* ccontact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccontact.m; sourceTree = "<group>"; };
 		DA8E65461C47F4F600BECAF6 /* vhomecelmenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhomecelmenu.h; sourceTree = "<group>"; };
 		DA8E65471C47F4F600BECAF6 /* vhomecelmenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhomecelmenu.m; sourceTree = "<group>"; };
 		DA8E65491C47F64C00BECAF6 /* mhomemenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mhomemenu.h; sourceTree = "<group>"; };
@@ -404,6 +407,7 @@
 				DABD83931C46F8A4003C28D3 /* home */,
 				DA3F6E5A1C46EC18007E2888 /* main */,
 				DA8E65A71C485EBF00BECAF6 /* services */,
+				DA4D56F21C4872F400C09C6F /* contact */,
 				DA8E65911C4848DF00BECAF6 /* about */,
 			);
 			path = c;
@@ -520,6 +524,15 @@
 				DA4D56EA1C48711800C09C6F /* mlocationsitem.m */,
 			);
 			path = locations;
+			sourceTree = "<group>";
+		};
+		DA4D56F21C4872F400C09C6F /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D56F31C48730900C09C6F /* ccontact.h */,
+				DA4D56F41C48730900C09C6F /* ccontact.m */,
+			);
+			path = contact;
 			sourceTree = "<group>";
 		};
 		DA8E65621C4808B200BECAF6 /* menu */ = {
@@ -829,6 +842,7 @@
 				DA8E654B1C47F64C00BECAF6 /* mhomemenu.m in Sources */,
 				DA8E65981C4849E900BECAF6 /* vabout.m in Sources */,
 				DA8E65B51C4865C100BECAF6 /* mservices.m in Sources */,
+				DA4D56F51C48730900C09C6F /* ccontact.m in Sources */,
 				DA8E65651C48316100BECAF6 /* mmenu.m in Sources */,
 				DABD839C1C46FE0F003C28D3 /* vhome.m in Sources */,
 				DA8E65721C48360900BECAF6 /* mmenuservices.m in Sources */,
