@@ -2,14 +2,19 @@
 
 @implementation mlocationsitem
 
--(instancetype)init:(NSString*)title symbol:(NSString*)symbol lat:(NSNumber*)lat lon:(NSNumber*)lon;
+@synthesize title;
+@synthesize coordinate;
+
+-(instancetype)init:(NSString*)atitle symbol:(NSString*)symbol lat:(NSNumber*)lat lon:(NSNumber*)lon index:(NSInteger)index
 {
     self = [super init];
     
-    self.title = title;
+    title = atitle;
     self.symbol = symbol;
     self.latitude = lat.doubleValue;
     self.longitude = lon.doubleValue;
+    self.index = index;
+    coordinate = CLLocationCoordinate2DMake(self.latitude, self.longitude);
     
     return self;
 }

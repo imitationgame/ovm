@@ -6,5 +6,6 @@
 
 -(NSInteger)count;
 -(mlocationsitem*)item:(NSInteger)item;
+-(NSArray*)asarray;
 
 @end

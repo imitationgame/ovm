@@ -56,6 +56,7 @@
     
     [self addSubview:mapview];
     [self addSubview:collection];
+    [mapview addAnnotations:[self.locations asarray]];
     
     NSDictionary *views = @{@"map":mapview, @"col":collection};
     NSDictionary *metrics = @{@"colwidth":@(itemwidth), @"colheight":@(itemheight * ([self.locations count] + 0))};
@@ -85,6 +86,11 @@
     [cel config:[self.locations item:index.item]];
     
     return cel;
+}
+
+-(void)collectionView:(UICollectionView*)col didSelectItemAtIndexPath:(NSIndexPath*)index
+{
+    [self.controller centerlocation:[self.locations item:index.item]];
 }
 
 @end

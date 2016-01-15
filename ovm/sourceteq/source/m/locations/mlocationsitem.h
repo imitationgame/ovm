@@ -1,12 +1,12 @@
 #import "appdel.h"
 
-@interface mlocationsitem:NSObject
+@interface mlocationsitem:NSObject<MKAnnotation>
 
--(instancetype)init:(NSString*)title symbol:(NSString*)symbol lat:(NSNumber*)lat lon:(NSNumber*)lon;
+-(instancetype)init:(NSString*)atitle symbol:(NSString*)symbol lat:(NSNumber*)lat lon:(NSNumber*)lon index:(NSInteger)index;
 
-@property(copy, nonatomic)NSString *title;
 @property(copy, nonatomic)NSString *symbol;
 @property(nonatomic)double latitude;
 @property(nonatomic)double longitude;
+@property(nonatomic)NSInteger index;
 
 @end

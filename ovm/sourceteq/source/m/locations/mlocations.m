@@ -19,7 +19,7 @@
         NSNumber *latitude = inraw[@"latitude"];
         NSNumber *longitude = inraw[@"longitude"];
         
-        [array addObject:[[mlocationsitem alloc] init:title symbol:symbol lat:latitude lon:longitude]];
+        [array addObject:[[mlocationsitem alloc] init:title symbol:symbol lat:latitude lon:longitude index:i]];
     }
     
     return self;
@@ -33,6 +33,11 @@
 -(mlocationsitem*)item:(NSInteger)item;
 {
     return array[item];
+}
+
+-(NSArray*)asarray
+{
+    return array.copy;
 }
 
 @end

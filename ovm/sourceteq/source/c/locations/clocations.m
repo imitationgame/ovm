@@ -12,7 +12,7 @@
     [[analytics singleton] trackscreen:ga_screen_locations];
     
     updateinitial = NO;
-    self.mapspan = MKCoordinateSpanMake(0.3, 0.3);
+    self.mapspan = MKCoordinateSpanMake(0.15, 0.15);
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -94,6 +94,12 @@
     [self.locations.mapview setRegion:MKCoordinateRegionMake(self.userlocation, self.mapspan) animated:YES];
 }
 
+-(void)centerlocation:(mlocationsitem*)item
+{
+    [self.locations.mapview setRegion:MKCoordinateRegionMake(item.coordinate, self.mapspan) animated:YES];
+    [self.locations.mapview selectAnnotation:item animated:YES];
+}
+
 #pragma -
 #pragma mark map delegate
 
@@ -106,8 +112,21 @@
         updateinitial = YES;
         
         [self centeruser];
-//        [mapmenu showuser];
     }
+}
+
+-(void)mapView:(MKMapView*)mapview didSelectAnnotationView:(MKAnnotationView*)view
+{
+    if(view.annotation != mapview.userLocation)
+    {
+        [self.locations.collection selectItemAtIndexPath:[NSIndexPath indexPathForItem:[(mlocationsitem*)view.annotation index] inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+        
+    }
+}
+
+-(void)mapView:(MKMapView*)mapview didDeselectAnnotationView:(MKAnnotationView*)view
+{
+    [self.locations.collection reloadData];
 }
 
 -(void)locationManager:(CLLocationManager*)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
