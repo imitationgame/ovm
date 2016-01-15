@@ -13,6 +13,9 @@
 	<key>events</key>
 	<array>
 		<string>application_rate</string>
+		<string>phonecall</string>
+		<string>email</string>
+		<string>web</string>
 	</array>
 	<key>actions</key>
 	<array>

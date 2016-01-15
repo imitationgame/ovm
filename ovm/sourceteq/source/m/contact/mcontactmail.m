@@ -13,6 +13,8 @@
 -(void)selected
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:contact@ovmx.org"]];
+    
+    [[analytics singleton] trackevent:ga_event_email action:ga_action_optin label:@""];
 }
 
 @end

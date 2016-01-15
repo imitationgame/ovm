@@ -13,6 +13,8 @@
 -(void)selected
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ovmx.org"]];
+    
+    [[analytics singleton] trackevent:ga_event_web action:ga_action_optin label:@""];
 }
 
 @end

@@ -22,6 +22,8 @@
     {
         [calert show:NSLocalizedString(@"contact_cel_call_not", nil)];
     }
+    
+    [[analytics singleton] trackevent:ga_event_phonecall action:ga_action_optin label:@""];
 }
 
 @end
