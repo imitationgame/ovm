@@ -18,7 +18,7 @@
 
 -(void)loadView
 {
-    self.view = [[vservices alloc] init];
+    self.view = [[vcontact alloc] init];
 }
 
 @end
