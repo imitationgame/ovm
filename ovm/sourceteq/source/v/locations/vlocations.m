@@ -2,12 +2,25 @@
 
 @implementation vlocations
 
--(instancetype)init:(clocations*)controller
+-(instancetype)init
 {
     self = [super init];
     [self setBackgroundColor:[UIColor whiteColor]];
     
+    return self;
+}
+
+-(void)dealloc
+{
+    [self.mapview setShowsUserLocation:NO];
+}
+
+#pragma mark public
+
+-(void)load:(clocations*)controller
+{
     self.controller = controller;
+    self.locations = [[mlocations alloc] init];
     
     MKMapView *mapview = [[MKMapView alloc] init];
     [mapview setRotateEnabled:NO];
@@ -23,13 +36,27 @@
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[map]-0-|" options:0 metrics:metrics views:views]];
-    
-    return self;
 }
 
--(void)dealloc
+#pragma mark -
+#pragma mark col del
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
-    [self.mapview setShowsUserLocation:NO];
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView*)col numberOfItemsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+-(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
+{
+    vlocationscel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    [cel config:];
+    
+    return cel;
 }
 
 @end

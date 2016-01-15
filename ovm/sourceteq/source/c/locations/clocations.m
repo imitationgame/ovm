@@ -25,11 +25,16 @@
 {
     [super viewDidAppear:animated];
     [self locationscheck];
+    
+    if(!self.locations.controller)
+    {
+        [self.locations load:self];
+    }
 }
 
 -(void)loadView
 {
-    self.view = [[vlocations alloc] init:self];
+    self.view = [[vlocations alloc] init];
     self.locations = (vlocations*)self.view;
     [self.locations.mapview setDelegate:self];
 }
