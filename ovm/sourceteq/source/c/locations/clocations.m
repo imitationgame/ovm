@@ -2,9 +2,6 @@
 
 @implementation clocations
 {
-    MKCoordinateSpan mapspan;
-    CLLocationCoordinate2D userlocation;
-    NSInteger selected;
     BOOL updateinitial;
 }
 
@@ -15,6 +12,7 @@
     [[analytics singleton] trackscreen:ga_screen_locations];
     
     updateinitial = NO;
+    self.mapspan = MKCoordinateSpanMake(0.015, 0.015);
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -27,6 +25,7 @@
 {
     self.view = [[vlocations alloc] init];
     self.locations = (vlocations*)self.view;
+    [self.locations.mapview setDelegate:self];
 }
 
 #pragma mark functionality
