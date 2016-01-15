@@ -21,3 +21,6 @@
 "contact_cel_call"="Call: +52 1 5264 3745";
 "contact_cel_mail"="Email: contacto@ovmx.org";
 "contact_cel_web"="Web: ovmx.org";
+"contact_cel_call_not"="Phone calls not supported";
+
+"alert_accept"="Accept";

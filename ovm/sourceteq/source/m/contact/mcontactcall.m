@@ -12,7 +12,16 @@
 
 -(void)selected
 {
+    NSURL *phone = [NSURL URLWithString:@"tel:52643745"];
     
+    if([[UIApplication sharedApplication] canOpenURL:phone])
+    {
+        [[UIApplication sharedApplication] openURL:phone];
+    }
+    else
+    {
+        [calert show:NSLocalizedString(@"contact_cel_call_not", nil)];
+    }
 }
 
 @end

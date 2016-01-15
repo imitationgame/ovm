@@ -5,7 +5,7 @@
 -(instancetype)init
 {
     self = [super init];
-    [self setBackgroundColor:[UIColor colorWithWhite:0.98 alpha:1]];
+    [self setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:1]];
 
     self.model = [[mcontact alloc] init];
     
@@ -43,7 +43,7 @@
 
 -(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
 {
-    return CGSizeMake(self.bounds.size.width, 60);
+    return CGSizeMake(self.bounds.size.width, 62);
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col

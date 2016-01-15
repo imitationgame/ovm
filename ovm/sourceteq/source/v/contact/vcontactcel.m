@@ -50,7 +50,7 @@
     }
     else
     {
-        [self.lbl setTextColor:[UIColor colorWithWhite:0 alpha:0.7]];
+        [self.lbl setTextColor:[UIColor colorWithWhite:0 alpha:0.85]];
         [self setBackgroundColor:[UIColor whiteColor]];
     }
 }
